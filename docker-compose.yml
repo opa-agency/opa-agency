@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # Vue.js Frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      # args:
+        # - VITE_API_BASE_URL=${VITE_API_BASE_URL:-http://localhost}
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-80}:80"
+    networks:
+      - opa-agency-net
+    labels:
+      - "dokploy.frontend=true"
+      # Traefik labels for production routing (optional)
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`${DOCKPLOY_FRONTEND_HOST}`)"
+      - "traefik.http.routers.frontend.entrypoints=websecure"
+      - "traefik.http.routers.frontend.tls.certresolver=letsencrypt"
+      - "traefik.http.services.frontend.loadbalancer.server.port=80"
+
+networks:
+  opa-agency-net:
+    driver: bridge
