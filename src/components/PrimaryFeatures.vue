@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
         <h2 class="text-3xl font-medium tracking-tight text-white">
-          Every feature you need to win. Try it for yourself.
+          Fiecare funcționalitate de care ai nevoie pentru a avea succes. Încearcă singur.
         </h2>
         <p class="mt-2 text-lg text-gray-400">
-          Online Presence Agency was built for businesses and entrepreneurs who want to stand out and aren't going to let anything get in the way of their digital success. If other agencies are afraid to build it, we have it.
+          Online Presence Agency a fost creat pentru afaceri și antreprenori care vor să iasă în evidență și nu vor permite nimic să le stea în cale pentru succesul lor digital. Dacă alte agenții se tem să construiască, noi avem soluția.
         </p>
       </div>
     </Container>
@@ -116,7 +116,7 @@ const InviteScreen = () => h('div', { class: 'flex flex-col' }, [
     ])
   ]),
   h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Invite Friends')
+    h('div', { class: 'text-2xl' }, 'Invită Prieteni')
   ]),
   h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
     h('div', { class: 'p-4' }, [
@@ -125,13 +125,13 @@ const InviteScreen = () => h('div', { class: 'flex flex-col' }, [
           h('div', { key: i, class: 'flex items-center gap-3 rounded-lg bg-gray-50 p-3' }, [
             h('div', { class: 'h-10 w-10 rounded-full bg-gray-200' }),
             h('div', { class: 'flex-auto' }, [
-              h('div', { class: 'text-sm font-medium text-gray-900' }, `Friend ${i}`),
-              h('div', { class: 'text-xs text-gray-500' }, 'friend@example.com')
+              h('div', { class: 'text-sm font-medium text-gray-900' }, `Prieten ${i}`),
+              h('div', { class: 'text-xs text-gray-500' }, 'prieten@example.com')
             ]),
-            h('button', { class: 'rounded bg-cyan-500 px-3 py-1 text-xs font-semibold text-white' }, 'Invite')
+            h('button', { class: 'rounded bg-cyan-500 px-3 py-1 text-xs font-semibold text-white' }, 'Invită')
           ])
         ),
-        h('div', { class: 'mt-6 rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Invite person')
+        h('div', { class: 'mt-6 rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Invită persoană')
       ])
     ])
   ])
@@ -144,8 +144,8 @@ const StocksScreen = () => h('div', { class: 'flex flex-col' }, [
     ])
   ]),
   h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Stocks'),
-    h('div', { class: 'text-sm text-gray-500' }, 'March 9, 2022')
+    h('div', { class: 'text-2xl' }, 'Acțiuni'),
+    h('div', { class: 'text-sm text-gray-500' }, 'Martie 9, 2022')
   ]),
   h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
     h('div', { class: 'divide-y divide-gray-100' }, [
@@ -187,16 +187,16 @@ const InvestScreen = () => h('div', { class: 'flex flex-col' }, [
     h('div', { class: 'px-4 py-6' }, [
       h('div', { class: 'space-y-4' }, [
         ...[
-          { label: 'Number of shares', value: '100' },
-          { label: 'Current market price', value: '$34.28' },
-          { label: 'Estimated cost', value: '$3,428.00' }
+          { label: 'Număr de acțiuni', value: '100' },
+          { label: 'Preț curent de piață', value: '$34.28' },
+          { label: 'Cost estimat', value: '$3,428.00' }
         ].map(item =>
           h('div', { key: item.label, class: 'flex justify-between border-b border-gray-100 pb-4' }, [
             h('div', { class: 'text-sm text-gray-500' }, item.label),
             h('div', { class: 'text-sm font-semibold text-gray-900' }, item.value)
           ])
         ),
-        h('div', { class: 'rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Buy shares')
+        h('div', { class: 'rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Cumpără acțiuni')
       ])
     ])
   ])
@@ -204,20 +204,20 @@ const InvestScreen = () => h('div', { class: 'flex flex-col' }, [
 
 const features = [
   {
-    name: 'Invite friends for better returns',
-    description: 'Build your network with Online Presence Agency and get faster results through our expert connections and collaborative approach.',
+    name: 'Invită prieteni pentru rezultate mai bune',
+    description: 'Construiește-ți rețeaua cu Online Presence Agency și obține rezultate mai rapide prin conexiunile noastre de experți și abordarea colaborativă.',
     icon: DeviceUserIcon,
     screen: InviteScreen
   },
   {
-    name: 'Notifications on stock dips',
-    description: 'Get a push notification every time we find out something that\'s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+    name: 'Notificări pentru oportunități',
+    description: 'Primește o notificare de fiecare dată când descoperim ceva care îți poate îmbunătăți strategia digitală, astfel încât să poți acționa rapid.',
     icon: DeviceNotificationIcon,
     screen: StocksScreen
   },
   {
-    name: 'Invest what you want',
-    description: 'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+    name: 'Investește cât dorești',
+    description: 'Oferim soluții personalizate pentru fiecare buget, astfel încât să poți investi în prezența ta digitală exact cât îți permite afacerea.',
     icon: DeviceTouchIcon,
     screen: InvestScreen
   }

@@ -36,19 +36,19 @@
               <PopoverPanel class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20">
                 <div class="space-y-4">
                   <PopoverButton :as="RouterLink" :to="{ name: 'home' }" class="block text-base/7 tracking-tight text-gray-700">
-                    Home
+                    Acasa
                   </PopoverButton>
                   <PopoverButton :as="RouterLink" to="/features" class="block text-base/7 tracking-tight text-gray-700">
-                    Features
+                    Functionalitati
                   </PopoverButton>
                   <PopoverButton :as="RouterLink" to="/reviews" class="block text-base/7 tracking-tight text-gray-700">
-                    Reviews
+                    Recenzii
                   </PopoverButton>
                   <PopoverButton :as="RouterLink" to="/pricing" class="block text-base/7 tracking-tight text-gray-700">
-                    Pricing
+                    Preturi
                   </PopoverButton>
                   <PopoverButton :as="RouterLink" to="/faqs" class="block text-base/7 tracking-tight text-gray-700">
-                    FAQs
+                    Intrebari frecvente
                   </PopoverButton>
                 </div>
                 <div class="mt-8 flex flex-col gap-4">

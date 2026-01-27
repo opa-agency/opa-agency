@@ -3,11 +3,11 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 id="faqs-title" class="text-3xl font-medium tracking-tight text-gray-900">
-          Frequently asked questions
+          Întrebări frecvente
         </h2>
         <p class="mt-2 text-lg text-gray-600">
-          If you have anything else you want to ask,
-          <a href="mailto:info@example.com" class="text-gray-900 underline">reach out to us</a>.
+          Dacă ai alte întrebări,
+          <a href="mailto:info@example.com" class="text-gray-900 underline">contactează-ne</a>.
         </p>
       </div>
       <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3">
@@ -30,44 +30,44 @@ import Container from './Container.vue'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
-      answer: 'Our whole business depends on our tips being good, so it\'s in our best interest that they are. The results of our customers speak for themselves, just trust us.'
+      question: 'Cum știu că sfaturile sunt bune?',
+      answer: 'Întreaga noastră afacere depinde de calitatea sfaturilor noastre, deci este în interesul nostru ca acestea să fie excelente. Rezultatele clienților noștri vorbesc de la sine, pur și simplu ai încredere în noi.'
     },
     {
-      question: 'Isn\'t this insider trading?',
-      answer: 'Yes exactly. But at scale! Our agency brings expert digital strategies from industry professionals you may not know directly.'
+      question: 'Nu este aceasta tranzacționare pe bază de informații privilegiate?',
+      answer: 'Da exact. Dar la scară mare! Agenția noastră aduce strategii digitale de la profesioniști din industrie pe care poate nu îi cunoști direct.'
     },
     {
-      question: 'But isn\'t insider trading illegal?',
-      answer: 'Here\'s the thing: you\'re the one doing the insider trading, not us. We\'re just giving you the tips and some tools to make trades. We\'re not doing anything wrong here.'
+      question: 'Dar nu este ilegal tranzacționarea pe bază de informații privilegiate?',
+      answer: 'Iată care este treaba: tu ești cel care face tranzacționarea, nu noi. Noi îți oferim doar sfaturile și câteva instrumente pentru a face tranzacții. Nu facem nimic greșit aici.'
     }
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer: 'Again I would argue this isn\'t really our responsibility. People make their own choices. If they don\'t research the consequences that\'s on them, not on us.'
+      question: 'Oamenii care vă dau sfaturi realizează ce fac?',
+      answer: 'Din nou, aș argumenta că aceasta nu este cu adevărat responsabilitatea noastră. Oamenii fac propriile alegeri. Dacă nu cercetează consecințele, este treaba lor, nu a noastră.'
     },
     {
-      question: 'Where is Online Presence Agency based?',
-      answer: 'Let\'s just say it\'s not somewhere where the SEC is going to find us.'
+      question: 'Unde este bazată Online Presence Agency?',
+      answer: 'Să spunem doar că nu este undeva unde SEC ne va găsi.'
     },
     {
-      question: 'Who can use Online Presence Agency services?',
-      answer: 'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though.'
+      question: 'Cine poate folosi serviciile Online Presence Agency?',
+      answer: 'Pentru planul nostru gratuit, limita de vârstă se bazează pe vârsta minimă pentru tranzacționare în țara ta de reședință. Planul nostru VIP folosește anonimizare avansată a tranzacțiilor.'
     }
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
-      answer: 'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.'
+      question: 'Cum ați reușit să puneți asta pe App Store?',
+      answer: 'Sincer, am fost surprinși și noi, dar în cele din urmă am aflat că recenzentul aplicației a găsit aplicația atât de convingătoare încât a aprobat-o doar ca să o poată folosi ei înșiși.'
     },
     {
-      question: 'What support does Online Presence Agency provide?',
-      answer: 'We provide comprehensive support for all our clients, from strategy development to implementation and ongoing optimization.'
+      question: 'Ce suport oferă Online Presence Agency?',
+      answer: 'Oferim suport cuprinzător pentru toți clienții noștri, de la dezvoltarea strategiei până la implementare și optimizare continuă.'
     },
     {
-      question: 'How do I become an insider?',
-      answer: 'Contact us with some details about your industry and the type of access you have to apply for an insider account.'
+      question: 'Cum devin un insider?',
+      answer: 'Contactează-ne cu câteva detalii despre industria ta și tipul de acces pe care îl ai pentru a solicita un cont de insider.'
     }
   ]
 ]

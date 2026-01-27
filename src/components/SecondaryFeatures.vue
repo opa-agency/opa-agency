@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl sm:text-center">
         <h2 class="text-3xl font-medium tracking-tight text-gray-900">
-          Now is the time to build your portfolio.
+          Acum este momentul să-ți construiești portofoliul.
         </h2>
         <p class="mt-2 text-lg text-gray-600">
-          With our expert guidance, it's never too late to build a strong online presence and grow your business successfully.
+          Cu îndrumarea noastră expertă, niciodată nu este prea târziu să construiești o prezență online puternică și să-ți dezvolți afacerea cu succes.
         </p>
       </div>
       <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
@@ -67,33 +67,33 @@ const DeviceChartIcon = () => h('svg', { viewBox: '0 0 32 32', fill: 'none', 'ar
 
 const features = [
   {
-    name: 'Invest any amount',
-    description: 'Whether it\'s $1 or $1,000,000, we can put your money to work for you.',
+    name: 'Investește orice sumă',
+    description: 'Fie că este 100 lei sau 100,000 lei, putem pune banii tăi să lucreze pentru tine.',
     icon: DeviceArrowIcon
   },
   {
-    name: 'Build a balanced portfolio',
-    description: 'Invest in different industries to find the most opportunities to win huge.',
+    name: 'Construiește un portofoliu echilibrat',
+    description: 'Investește în industrii diferite pentru a găsi cele mai multe oportunități de a câștiga mare.',
     icon: DeviceCardsIcon
   },
   {
-    name: 'Trade in real-time',
-    description: 'Get insider tips on big stock moves and act on them within seconds.',
+    name: 'Tranzacționează în timp real',
+    description: 'Primește sfaturi de la experți despre mișcări importante și acționează asupra lor în câteva secunde.',
     icon: DeviceClockIcon
   },
   {
-    name: 'Profit from your network',
-    description: 'Build partnerships and collaborate with our network to grow your digital presence faster.',
+    name: 'Profită de rețeaua ta',
+    description: 'Construiește parteneriate și colaborează cu rețeaua noastră pentru a-ți dezvolta prezența digitală mai rapid.',
     icon: DeviceListIcon
   },
   {
-    name: 'Encrypted and anonymized',
-    description: 'Cutting-edge security technology that even the NSA doesn\'t know about keeps you hidden.',
+    name: 'Criptat și anonimizat',
+    description: 'Tehnologia de securitate de ultimă generație te menține protejat și în siguranță.',
     icon: DeviceLockIcon
   },
   {
-    name: 'Portfolio tracking',
-    description: 'Watch your investments grow exponentially, leaving other investors in the dust.',
+    name: 'Urmărirea portofoliului',
+    description: 'Urmărește cum investițiile tale cresc exponențial, lăsând alți investitori în urmă.',
     icon: DeviceChartIcon
   }
 ]

@@ -22,11 +22,11 @@ import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
 const links = [
-  { label: 'Home', to: '/' },
-  { label: 'Features', to: '/features' },
-  { label: 'Reviews', to: '/reviews' },
-  { label: 'Pricing', to: '/pricing' },
-  { label: 'FAQs', to: '/faqs' }
+  { label: 'Acasa', to: '/' },
+  { label: 'Functionalitati', to: '/features' },
+  { label: 'Recenzii', to: '/reviews' },
+  { label: 'Preturi', to: '/pricing' },
+  { label: 'Intrebari frecvente', to: '/faqs' }
 ]
 
 const hoveredIndex = ref(null)

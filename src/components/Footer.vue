@@ -7,11 +7,22 @@
             <img src="@/images/Logo.png" alt="Online Presence Agency" class="h-10 flex-none" />
             <div class="ml-4">
               <p class="text-base font-semibold">Online Presence Agency</p>
-              <p class="mt-1 text-sm">Build Your Digital Brand</p>
+              <p class="mt-1 text-sm">Construiește-ți Brandul Digital</p>
             </div>
           </div>
-          <nav class="mt-11 flex gap-8">
-            <NavLinks />
+          <nav class="mt-11 flex gap-6 text-sm text-gray-600">
+            <RouterLink :to="{ name: 'terms' }" class="hover:text-gray-900 transition-colors">
+              Termeni si Conditii
+            </RouterLink>
+            <RouterLink :to="{ name: 'privacy' }" class="hover:text-gray-900 transition-colors">
+              Politica de Confidentialitate
+            </RouterLink>
+            <RouterLink :to="{ name: 'delivery' }" class="hover:text-gray-900 transition-colors">
+              Politica de Livrare
+            </RouterLink>
+            <RouterLink :to="{ name: 'contact' }" class="hover:text-gray-900 transition-colors">
+              Informatii de Contact
+            </RouterLink>
           </nav>
         </div>
       </div>
@@ -25,6 +36,6 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import Container from './Container.vue'
-import NavLinks from './NavLinks.vue'
 </script>
