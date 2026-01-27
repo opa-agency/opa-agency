@@ -3,11 +3,39 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
         <h2 class="text-3xl font-medium tracking-tight text-white">
-          Vezi ofertele noastre pentru landing page-uri
+          Ofertele noastre pentru Landing Page
         </h2>
         <p class="mt-2 text-lg text-gray-400">
-          Oferim soluții complete de landing page-uri personalizate pentru afacerea ta. De la design modern și responsive, până la integrări avansate - avem pachetul potrivit pentru nevoile tale. Fiecare cerere este unică, iar dacă niciun pachet nu îți satisface nevoile, contactează-ne pentru o ofertă personalizată.
+          Oferim soluții complete de landing page-uri personalizate pentru nevoile tale.
         </p>
+        <p class="mt-2 text-lg text-gray-400">
+          Design modern și responsive - avem pachetul potrivit pentru nevoile tale.
+        </p>
+        <p class="mt-2 text-lg text-gray-400">
+          Fiecare cerere este unică, iar dacă niciun pachet nu îți satisface nevoile, contactează-ne pentru o ofertă personalizată.
+        </p>
+        <div class="mt-8 rounded-lg bg-gray-800/50 p-4 sm:p-6">
+          <p class="text-sm text-gray-300">
+            <span class="font-semibold text-white">Inclus în toate pachetele pe o durată de un an:</span>
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-3 text-sm text-gray-300">
+              <svg class="h-5 w-5 text-cyan-400 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Domeniu personalizat</span>
+            </li>
+            <li class="flex items-center gap-3 text-sm text-gray-300">
+              <svg class="h-5 w-5 text-cyan-400 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Hosting și certificate de securitate https</span>
+            </li>
+          </ul>
+          <p class="mt-4 text-sm text-gray-400">
+            <span class="text-white font-semibold">După primul an:</span> Taxa anuală de €50 pentru menținerea domeniului și hostingului.
+          </p>
+        </div>
       </div>
     </Container>
 
@@ -135,10 +163,10 @@ const BasicScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full' }
   h('div', { class: 'flex-auto bg-gray-900 p-4' }, [
     h('div', { class: 'space-y-3' }, [
       ...[
-        'Design modern și responsive',
-        '1-3 secțiuni',
-        'Formular de contact',
-        'Optimizare SEO de bază',
+        'O pagină de prezentare cu 3-6 secțiuni',
+        '3 modificări după setup-ul inițial',
+        'Animații interactive',
+        'Domeniu și hosting inclus pe un an',
         'Livrare în 3-5 zile'
       ].map(feature =>
         h('div', { key: feature, class: 'flex items-start gap-2' }, [
@@ -162,12 +190,11 @@ const StandardScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full
   h('div', { class: 'flex-auto bg-gray-900 p-4' }, [
     h('div', { class: 'space-y-3' }, [
       ...[
-        'Tot din Basic, plus:',
-        '4-6 secțiuni',
+        'Tot din Basic (o pagină, 3-6 secțiuni, 3 modificări)',
+        'Multi-pagină: până la 5 pagini',
+        '4 secțiuni pe fiecare pagină',
         'Animații interactive',
-        'Integrare Google Analytics',
-        'Chat widget',
-        'Livrare în 5-7 zile'
+        'Livrare în 5-14 zile'
       ].map(feature =>
         h('div', { key: feature, class: 'flex items-start gap-2' }, [
           h('svg', { class: 'h-5 w-5 text-cyan-400 flex-shrink-0 mt-0.5', viewBox: '0 0 20 20', fill: 'currentColor' }, [
@@ -192,11 +219,8 @@ const PremiumScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full'
       ...[
         'Tot din Standard, plus:',
         'Secțiuni nelimitate',
-        'CMS pentru conținut',
-        'A/B testing',
-        'Integrări avansate (CRM)',
-        'Suport prioritar 30 zile',
-        'Livrare în 7-10 zile'
+        'Suport pentru modificări 3 luni post-setup',
+        'Livrare în 7-30 zile'
       ].map(feature =>
         h('div', { key: feature, class: 'flex items-start gap-2' }, [
           h('svg', { class: 'h-5 w-5 text-cyan-400 flex-shrink-0 mt-0.5', viewBox: '0 0 20 20', fill: 'currentColor' }, [
@@ -212,7 +236,7 @@ const PremiumScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full'
 const offers = [
   {
     name: 'Pachet Basic',
-    description: 'Perfect pentru afaceri mici care își doresc o prezență online profesională. Include design modern, responsive și toate funcționalitățile esențiale.',
+    description: 'Perfect pentru o prezenta online de bază.',
     price: '€299',
     priceUnit: 'plată unică',
     icon: PackageBasicIcon,
@@ -220,7 +244,7 @@ const offers = [
   },
   {
     name: 'Pachet Standard',
-    description: 'Cel mai popular pachet. Include design avansat, animații interactive și integrări cu instrumente de marketing pentru a crește conversiile.',
+    description: 'Soluție multi-pagină cu până la 5 pagini. Include toate din Basic plus 4 secțiuni pe fiecare pagină și animații interactive pentru o prezență online profesională.',
     price: '€499',
     priceUnit: 'plată unică',
     icon: PackageStandardIcon,

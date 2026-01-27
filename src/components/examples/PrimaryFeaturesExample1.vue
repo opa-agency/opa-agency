@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
         <h2 class="text-3xl font-medium tracking-tight text-white">
-          Vezi ofertele noastre pentru landing page-uri
+          Lorem ipsum dolor sit amet
         </h2>
         <p class="mt-2 text-lg text-gray-400">
-          Oferim soluții complete de landing page-uri personalizate pentru afacerea ta. De la design modern și responsive, până la integrări avansate - avem pachetul potrivit pentru nevoile tale. Fiecare cerere este unică, iar dacă niciun pachet nu îți satisface nevoile, contactează-ne pentru o ofertă personalizată.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
     </Container>
@@ -204,20 +204,20 @@ const InvestScreen = () => h('div', { class: 'flex flex-col' }, [
 
 const features = [
   {
-    name: 'Invită prieteni pentru rezultate mai bune',
-    description: 'Construiește-ți rețeaua cu Online Presence Agency și obține rezultate mai rapide prin conexiunile noastre de experți și abordarea colaborativă.',
+    name: 'Lorem ipsum dolor',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     icon: DeviceUserIcon,
     screen: InviteScreen
   },
   {
-    name: 'Notificări pentru oportunități',
-    description: 'Primește o notificare de fiecare dată când descoperim ceva care îți poate îmbunătăți strategia digitală, astfel încât să poți acționa rapid.',
+    name: 'Sed do eiusmod',
+    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     icon: DeviceNotificationIcon,
     screen: StocksScreen
   },
   {
-    name: 'Investește cât dorești',
-    description: 'Oferim soluții personalizate pentru fiecare buget, astfel încât să poți investi în prezența ta digitală exact cât îți permite afacerea.',
+    name: 'Ut enim ad minim',
+    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     icon: DeviceTouchIcon,
     screen: InvestScreen
   }

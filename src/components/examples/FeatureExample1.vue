@@ -204,20 +204,20 @@ const InvestScreen = () => h('div', { class: 'flex flex-col' }, [
 
 const features = [
   {
-    name: 'Invită prieteni pentru rezultate mai bune',
-    description: 'Construiește-ți rețeaua cu Online Presence Agency și obține rezultate mai rapide prin conexiunile noastre de experți și abordarea colaborativă.',
+    name: 'Lorem ipsum dolor',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     icon: DeviceUserIcon,
     screen: InviteScreen
   },
   {
-    name: 'Notificări pentru oportunități',
-    description: 'Primește o notificare de fiecare dată când descoperim ceva care îți poate îmbunătăți strategia digitală, astfel încât să poți acționa rapid.',
+    name: 'Sed do eiusmod',
+    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     icon: DeviceNotificationIcon,
     screen: StocksScreen
   },
   {
-    name: 'Investește cât dorești',
-    description: 'Oferim soluții personalizate pentru fiecare buget, astfel încât să poți investi în prezența ta digitală exact cât îți permite afacerea.',
+    name: 'Ut enim ad minim',
+    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     icon: DeviceTouchIcon,
     screen: InvestScreen
   }
