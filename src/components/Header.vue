@@ -3,9 +3,9 @@
     <nav>
       <Container class="relative z-50 flex justify-between py-8">
         <div class="relative z-10 flex items-center gap-16">
-          <a href="/" aria-label="Home">
+          <RouterLink :to="{ name: 'home' }" aria-label="Home">
             <Logo class="h-10 w-auto" />
-          </a>
+          </RouterLink>
           <div class="hidden lg:flex lg:gap-10">
             <NavLinks />
           </div>
@@ -35,16 +35,19 @@
             >
               <PopoverPanel class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20">
                 <div class="space-y-4">
-                  <PopoverButton as="a" href="/#features" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton :as="RouterLink" :to="{ name: 'home' }" class="block text-base/7 tracking-tight text-gray-700">
+                    Home
+                  </PopoverButton>
+                  <PopoverButton :as="RouterLink" to="/features" class="block text-base/7 tracking-tight text-gray-700">
                     Features
                   </PopoverButton>
-                  <PopoverButton as="a" href="/#reviews" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton :as="RouterLink" to="/reviews" class="block text-base/7 tracking-tight text-gray-700">
                     Reviews
                   </PopoverButton>
-                  <PopoverButton as="a" href="/#pricing" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton :as="RouterLink" to="/pricing" class="block text-base/7 tracking-tight text-gray-700">
                     Pricing
                   </PopoverButton>
-                  <PopoverButton as="a" href="/#faqs" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton :as="RouterLink" to="/faqs" class="block text-base/7 tracking-tight text-gray-700">
                     FAQs
                   </PopoverButton>
                 </div>
@@ -64,7 +67,7 @@
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import Container from './Container.vue'
-import Button from './Button.vue'
 import Logo from './Logo.vue'
 import NavLinks from './NavLinks.vue'
+import { RouterLink } from 'vue-router'
 </script>

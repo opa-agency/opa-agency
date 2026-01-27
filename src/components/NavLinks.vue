@@ -1,8 +1,8 @@
 <template>
-  <a
+  <RouterLink
     v-for="(link, index) in links"
-    :key="link[0]"
-    :href="link[1]"
+    :key="link.label"
+    :to="link.to"
     class="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
     @mouseenter="handleMouseEnter(index)"
     @mouseleave="handleMouseLeave"
@@ -13,18 +13,20 @@
         class="absolute inset-0 rounded-lg bg-gray-100"
       />
     </Transition>
-    <span class="relative z-10">{{ link[0] }}</span>
-  </a>
+    <span class="relative z-10">{{ link.label }}</span>
+  </RouterLink>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const links = [
-  ['Features', '/#features'],
-  ['Reviews', '/#reviews'],
-  ['Pricing', '/#pricing'],
-  ['FAQs', '/#faqs']
+  { label: 'Home', to: '/' },
+  { label: 'Features', to: '/features' },
+  { label: 'Reviews', to: '/reviews' },
+  { label: 'Pricing', to: '/pricing' },
+  { label: 'FAQs', to: '/faqs' }
 ]
 
 const hoveredIndex = ref(null)
