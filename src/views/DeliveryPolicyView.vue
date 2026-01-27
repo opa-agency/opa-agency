@@ -1,7 +1,7 @@
 <template>
   <div class="py-16">
     <Container>
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-5xl mx-auto">
         <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           POLITICA DE LIVRARE
         </h1>

@@ -10,7 +10,7 @@
               <p class="mt-1 text-sm">Construiește-ți Brandul Digital</p>
             </div>
           </div>
-          <nav class="mt-11 flex gap-6 text-sm text-gray-600">
+          <nav class="mt-11 flex flex-col gap-4 text-sm text-gray-600 md:flex-row md:gap-6">
             <RouterLink :to="{ name: 'terms' }" class="hover:text-gray-900 transition-colors">
               Termeni si Conditii
             </RouterLink>
