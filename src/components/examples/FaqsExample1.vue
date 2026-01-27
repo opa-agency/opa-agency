@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import Container from './Container.vue'
+import Container from '../Container.vue'
 
 const faqs = [
   [

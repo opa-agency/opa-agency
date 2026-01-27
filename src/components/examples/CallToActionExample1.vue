@@ -22,15 +22,11 @@
           creează un cont astăzi și îți vom trimite un sfat garantat să
           dubleze prima ta investiție.
         </p>
-        <div class="mt-8 flex justify-center">
-          <AppStoreLink color="white" />
-        </div>
       </div>
     </Container>
   </section>
 </template>
 
 <script setup>
-import Container from './Container.vue'
-import AppStoreLink from './AppStoreLink.vue'
+import Container from '../Container.vue'
 </script>

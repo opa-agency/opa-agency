@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="bg-gray-900 text-gray-100">
     <nav>
-      <Container class="relative z-50 flex justify-between py-8">
+      <Container class="relative z-50 flex justify-between py-6">
         <div class="relative z-10 flex items-center gap-16">
           <RouterLink :to="{ name: 'home' }" aria-label="Home">
             <Logo class="h-10 w-auto" />
@@ -13,7 +13,7 @@
         <div class="flex items-center gap-6">
           <Popover class="lg:hidden">
             <PopoverButton
-              class="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900"
+              class="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-100 p-2 hover:bg-white/10 hover:stroke-white active:stroke-white"
               aria-label="Toggle site navigation"
             >
               <template #default="{ open }">
@@ -33,40 +33,40 @@
               leave-from-class="opacity-100 translate-y-0"
               leave-to-class="opacity-0 -translate-y-8"
             >
-              <PopoverPanel class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20">
+              <PopoverPanel class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-900 px-6 pt-32 pb-6 shadow-2xl shadow-black/40 ring-1 ring-white/10">
                 <div class="space-y-4">
                   <PopoverButton
                     :as="RouterLink"
                     :to="{ name: 'home' }"
-                    :class="['block text-base/7 tracking-tight', isActive('/') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                    :class="['block text-base/7 tracking-tight', isActive('/') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Acasa
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
                     to="/features"
-                    :class="['block text-base/7 tracking-tight', isActive('/features') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                    :class="['block text-base/7 tracking-tight', isActive('/features') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Functionalitati
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
                     to="/reviews"
-                    :class="['block text-base/7 tracking-tight', isActive('/reviews') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                    :class="['block text-base/7 tracking-tight', isActive('/reviews') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Recenzii
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
                     to="/pricing"
-                    :class="['block text-base/7 tracking-tight', isActive('/pricing') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                    :class="['block text-base/7 tracking-tight', isActive('/pricing') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Preturi
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
                     to="/faqs"
-                    :class="['block text-base/7 tracking-tight', isActive('/faqs') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                    :class="['block text-base/7 tracking-tight', isActive('/faqs') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Intrebari frecvente
                   </PopoverButton>

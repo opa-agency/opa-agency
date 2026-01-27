@@ -4,8 +4,8 @@
     :key="link.label"
     :to="link.to"
     :class="[
-      'relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm transition-colors delay-150 hover:text-gray-900 hover:delay-0',
-      isActive(link.to) ? 'text-gray-900 font-semibold' : 'text-gray-700'
+      'relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm transition-colors delay-150 hover:text-white hover:delay-0',
+      isActive(link.to) ? 'text-white font-semibold' : 'text-gray-200'
     ]"
     @mouseenter="handleMouseEnter(index)"
     @mouseleave="handleMouseLeave"
@@ -13,7 +13,7 @@
     <Transition>
       <span
         v-if="hoveredIndex === index"
-        class="absolute inset-0 rounded-lg bg-gray-100"
+        class="absolute inset-0 rounded-lg bg-white/10"
       />
     </Transition>
     <span class="relative z-10">{{ link.label }}</span>
@@ -26,10 +26,7 @@ import { RouterLink, useRoute } from 'vue-router'
 
 const links = [
   { label: 'Acasa', to: '/' },
-  { label: 'Functionalitati', to: '/features' },
-  { label: 'Recenzii', to: '/reviews' },
-  { label: 'Preturi', to: '/pricing' },
-  { label: 'Intrebari frecvente', to: '/faqs' }
+  { label: 'Exemple', to: '/examples' }
 ]
 
 const route = useRoute()

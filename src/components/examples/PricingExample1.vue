@@ -53,8 +53,8 @@
 </template>
 
 <script setup>
-import Container from './Container.vue'
-import Button from './Button.vue'
+import Container from '../Container.vue'
+import Button from '../Button.vue'
 
 const plans = [
   {

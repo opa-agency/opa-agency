@@ -1,0 +1,100 @@
+<template>
+  <section id="secondary-features" aria-label="Features for building a portfolio" class="py-20 sm:py-32">
+    <Container>
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <h2 class="text-3xl font-medium tracking-tight text-gray-900">
+          Acum este momentul să-ți construiești portofoliul.
+        </h2>
+        <p class="mt-2 text-lg text-gray-600">
+          Cu îndrumarea noastră expertă, niciodată nu este prea târziu să construiești o prezență online puternică și să-ți dezvolți afacerea cu succes.
+        </p>
+      </div>
+      <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
+        <li v-for="feature in features" :key="feature.name" class="rounded-2xl border border-gray-200 p-8">
+          <component :is="feature.icon" class="h-8 w-8" />
+          <h3 class="mt-6 font-semibold text-gray-900">{{ feature.name }}</h3>
+          <p class="mt-2 text-gray-700">{{ feature.description }}</p>
+        </li>
+      </ul>
+    </Container>
+  </section>
+</template>
+
+<script setup>
+import { h } from 'vue'
+import Container from '../Container.vue'
+
+const DeviceArrowIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true' }, [
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#737373' }),
+  h('path', { d: 'M12 25l8-8m0 0h-6m6 0v6', stroke: '#171717', 'stroke-width': '2', 'stroke-linecap': 'round' }),
+  h('circle', { cx: '16', cy: '16', r: '16', fill: '#A3A3A3', 'fill-opacity': '0.2' })
+])
+
+const DeviceCardsIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true' }, [
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#737373' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 13a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H10a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H10a1 1 0 01-1-1v-2zm1 5a1 1 0 00-1 1v2a1 1 0 001 1h12a1 1 0 001-1v-2a1 1 0 00-1-1H10z', fill: '#737373' }),
+  h('rect', { x: '9', y: '6', width: '14', height: '4', rx: '1', fill: '#171717' }),
+  h('circle', { cx: '16', cy: '16', r: '16', fill: '#A3A3A3', 'fill-opacity': '0.2' })
+])
+
+const DeviceClockIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true' }, [
+  h('circle', { cx: '16', cy: '16', r: '16', fill: '#A3A3A3', 'fill-opacity': '0.2' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M5 4a4 4 0 014-4h14a4 4 0 014 4v10h-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 002 2h5v2H9a4 4 0 01-4-4V4z', fill: '#737373' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M24 32a8 8 0 100-16 8 8 0 000 16zm1-8.414V19h-2v5.414l4 4L28.414 27 25 23.586z', fill: '#171717' })
+])
+
+const DeviceListIcon = () => h('svg', { viewBox: '0 0 32 32', fill: 'none', 'aria-hidden': 'true' }, [
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#737373' }),
+  h('circle', { cx: '11', cy: '14', r: '2', fill: '#171717' }),
+  h('circle', { cx: '11', cy: '20', r: '2', fill: '#171717' }),
+  h('circle', { cx: '11', cy: '26', r: '2', fill: '#171717' }),
+  h('path', { d: 'M16 14h6M16 20h6M16 26h6', stroke: '#737373', 'stroke-width': '2', 'stroke-linecap': 'square' }),
+  h('circle', { cx: '16', cy: '16', r: '16', fill: '#A3A3A3', 'fill-opacity': '0.2' })
+])
+
+const DeviceLockIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true' }, [
+  h('circle', { cx: '16', cy: '16', r: '16', fill: '#A3A3A3', 'fill-opacity': '0.2' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M5 4a4 4 0 014-4h14a4 4 0 014 4v10h-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 002 2h5v2H9a4 4 0 01-4-4V4z', fill: '#737373' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M18 19.5a3.5 3.5 0 117 0V22a2 2 0 012 2v6a2 2 0 01-2 2h-7a2 2 0 01-2-2v-6a2 2 0 012-2v-2.5zm2 2.5h3v-2.5a1.5 1.5 0 00-3 0V22z', fill: '#171717' })
+])
+
+const DeviceChartIcon = () => h('svg', { viewBox: '0 0 32 32', fill: 'none', 'aria-hidden': 'true' }, [
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#737373' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M23 13.838V26a2 2 0 01-2 2H11a2 2 0 01-2-2V15.65l2.57 3.212a1 1 0 001.38.175L15.4 17.2a1 1 0 011.494.353l1.841 3.681c.399.797 1.562.714 1.843-.13L23 13.837z', fill: '#171717' }),
+  h('path', { d: 'M10 12h12', stroke: '#737373', 'stroke-width': '2', 'stroke-linecap': 'square' }),
+  h('circle', { cx: '16', cy: '16', r: '16', fill: '#A3A3A3', 'fill-opacity': '0.2' })
+])
+
+const features = [
+  {
+    name: 'Investește orice sumă',
+    description: 'Fie că este 100 lei sau 100,000 lei, putem pune banii tăi să lucreze pentru tine.',
+    icon: DeviceArrowIcon
+  },
+  {
+    name: 'Construiește un portofoliu echilibrat',
+    description: 'Investește în industrii diferite pentru a găsi cele mai multe oportunități de a câștiga mare.',
+    icon: DeviceCardsIcon
+  },
+  {
+    name: 'Tranzacționează în timp real',
+    description: 'Primește sfaturi de la experți despre mișcări importante și acționează asupra lor în câteva secunde.',
+    icon: DeviceClockIcon
+  },
+  {
+    name: 'Profită de rețeaua ta',
+    description: 'Construiește parteneriate și colaborează cu rețeaua noastră pentru a-ți dezvolta prezența digitală mai rapid.',
+    icon: DeviceListIcon
+  },
+  {
+    name: 'Criptat și anonimizat',
+    description: 'Tehnologia de securitate de ultimă generație te menține protejat și în siguranță.',
+    icon: DeviceLockIcon
+  },
+  {
+    name: 'Urmărirea portofoliului',
+    description: 'Urmărește cum investițiile tale cresc exponențial, lăsând alți investitori în urmă.',
+    icon: DeviceChartIcon
+  }
+]
+</script>

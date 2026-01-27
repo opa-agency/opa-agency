@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 antialiased">
+  <div class="flex min-h-screen flex-col bg-gray-50 antialiased">
     <Header />
     <main class="flex-auto">
       <slot />

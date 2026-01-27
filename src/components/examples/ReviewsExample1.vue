@@ -38,7 +38,7 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import Container from './Container.vue'
+import Container from '../Container.vue'
 import { cn } from '@/utils/cn'
 
 const reviews = [
