@@ -40,6 +40,9 @@
               Datele sunt păstrate în siguranță și nu sunt transmise către terți, cu excepția obligațiilor legale.
             </p>
             <p class="mt-3">
+              Datele clienților vor fi șterse automat din baza noastră de date după o perioadă de doi ani de inactivitate (fără comenzi noi sau comunicări inițiate), cu excepția cazurilor în care s-a convenit altfel prin contract sau prin solicitarea expresă a clientului de a păstra datele pentru o perioadă mai lungă.
+            </p>
+            <p class="mt-3">
               Aveți dreptul să solicitați accesul, modificarea sau ștergerea datelor personale prin email.
             </p>
           </section>
