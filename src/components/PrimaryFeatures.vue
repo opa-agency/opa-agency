@@ -190,7 +190,7 @@ const StandardScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full
   h('div', { class: 'flex-auto bg-gray-900 p-4' }, [
     h('div', { class: 'space-y-3' }, [
       ...[
-        'Tot din Basic (o pagină, 3-6 secțiuni, 3 modificări)',
+        'Tot din Basic, plus:',
         'Multi-pagină: până la 5 pagini',
         '4 secțiuni pe fiecare pagină',
         'Animații interactive',
