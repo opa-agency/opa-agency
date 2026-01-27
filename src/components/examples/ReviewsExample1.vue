@@ -2,10 +2,10 @@
   <section id="reviews" aria-labelledby="reviews-title" class="py-16 sm:py-20">
     <Container>
       <h2 id="reviews-title" class="text-3xl font-medium tracking-tight text-gray-900 sm:text-center">
-        Toată lumea își dezvoltă afacerea cu Online Presence Agency.
+        Lorem ipsum dolor sit amet
       </h2>
       <p class="mt-2 text-lg text-gray-600 sm:text-center">
-        Mii de persoane și-au dublat valoarea netă în ultimele 30 de zile.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div ref="containerRef" class="relative -mx-4 mt-16 grid h-196 max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3">
         <template v-if="isInView">
@@ -42,90 +42,20 @@ import Container from '../Container.vue'
 import { cn } from '@/utils/cn'
 
 const reviews = [
-  {
-    title: 'Funcționează cu adevărat.',
-    body: 'Online Presence Agency mi-a transformat prezența afacerii și mi-a triplat solicitările de la clienți într-o lună.',
-    author: 'InvestitorNebun',
-    rating: 5
-  },
-  {
-    title: 'Ai nevoie de această aplicație.',
-    body: 'Nu înțelegeam marketingul digital înainte de a lucra cu Online Presence Agency. Acum afacerea mea prosperă online.',
-    author: 'FărăIdeeDarBogat',
-    rating: 5
-  },
-  {
-    title: 'Asta nu ar trebui să fie legal.',
-    body: 'Online Presence Agency face atât de ușoară construirea unui brand digital puternic încât nu pot crede diferența pe care o face.',
-    author: 'VisulMeu',
-    rating: 5
-  },
-  {
-    title: 'La naiba cu consultanții financiari.',
-    body: 'Prezența mea web anterioară abia genera interes. Cu Online Presence Agency, afacerea mea înflorește.',
-    author: 'JordanBelfort1962',
-    rating: 5
-  },
-  {
-    title: 'Îmi place!',
-    body: 'Am început să furnizez eu însumi informații privilegiate și acum primesc noi sfaturi privilegiate la fiecare 5 minute. Lamborghini nou este livrat săptămâna viitoare!',
-    author: 'DlBurns',
-    rating: 5
-  },
-  {
-    title: 'Prea bun pentru a fi adevărat.',
-    body: 'Rezultatele au venit atât de repede cu Online Presence Agency încât am crezut că este prea bun pentru a fi adevărat. Dar clienții potențiali și conversiile sunt reale. Acest serviciu este uimitor!',
-    author: 'LeneBogat99',
-    rating: 5
-  },
-  {
-    title: 'Aș vrea să pot da 6 stele',
-    body: 'Aceasta este literalmente cea mai importantă aplicație pe care o vei descărca vreodată în viața ta. Intră pe asta înainte ca să devină atât de populară încât toți ceilalți primesc și ei aceste sfaturi.',
-    author: 'SaraIubeșteBanii',
-    rating: 5
-  },
-  {
-    title: 'Am cumpărat o insulă.',
-    body: 'Da, ai citit bine. Vrei și tu o afacere online înfloritoare? Ia Online Presence Agency.',
-    author: 'UnchiuScrooge',
-    rating: 5
-  },
-  {
-    title: 'Nu mai am datorii!',
-    body: 'După 2 săptămâni cu Online Presence Agency afacerea mea a atins noi repere de creștere. De ce nu am făcut asta mai devreme?',
-    author: 'BruceWayne',
-    rating: 5
-  },
-  {
-    title: 'Am 13 ani și sunt bogat.',
-    body: 'Iubesc că cu anonimizarea tranzacțiilor Pocket m-am putut înscrie și începe să tranzacționez când aveam 12 ani. Aveam un milion de dolari înainte să am păr sub axile!',
-    author: 'BogătașulRichie',
-    rating: 5
-  },
-  {
-    title: 'Am început o firmă de investiții.',
-    body: 'Le taxez clienților un comision de management de 3% și arunc toate investițiile lor în Pocket. Bani ușori!',
-    author: 'ConteleDeMonteCristo',
-    rating: 5
-  },
-  {
-    title: 'Este ca o superputere.',
-    body: 'Fiecare sfat pe care mi l-a trimis Pocket s-a concretizat. Este ca și cum ai juca Blackjack dar știi exact ce carte vine următoarea!',
-    author: 'ClarkKent',
-    rating: 5
-  },
-  {
-    title: 'Mi-am dat demisia.',
-    body: 'Am descărcat Pocket acum trei zile și mi-am dat demisia astăzi. Nu pot crede că nimeni altcineva nu s-a gândit să construiască o aplicație de tranzacționare care funcționează așa!',
-    author: 'GeorgeCostanza',
-    rating: 5
-  },
-  {
-    title: 'Nu descărca această aplicație',
-    body: 'Doar dacă nu vrei să ai cea mai bună viață vreodată! Scriu literalmente asta de pe un iaht.',
-    author: 'JeffBezos',
-    rating: 5
-  }
+  { title: 'Lorem ipsum dolor', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', author: 'Lorem Ipsum', rating: 5 },
+  { title: 'Sit amet consectetur', body: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', author: 'Dolor Sit', rating: 5 },
+  { title: 'Adipiscing elit sed', body: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', author: 'Amet Consectetur', rating: 5 },
+  { title: 'Duis aute irure', body: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', author: 'Irure Dolor', rating: 5 },
+  { title: 'Excepteur sint occaecat', body: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', author: 'Occaecat Cupidatat', rating: 5 },
+  { title: 'Tempor incididunt', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.', author: 'Tempor Elit', rating: 5 },
+  { title: 'Ullamco laboris', body: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', author: 'Ullamco Consequat', rating: 5 },
+  { title: 'Velit esse cillum', body: 'Velit esse cillum dolore eu fugiat nulla pariatur.', author: 'Cillum Dolore', rating: 5 },
+  { title: 'Fugiat nulla pariatur', body: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.', author: 'Fugiat Nulla', rating: 5 },
+  { title: 'Nemo enim ipsam', body: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.', author: 'Nemo Enim', rating: 5 },
+  { title: 'Neque porro quisquam', body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.', author: 'Porro Quisquam', rating: 5 },
+  { title: 'Ut enim ad', body: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.', author: 'Minima Veniam', rating: 5 },
+  { title: 'Quis autem vel', body: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.', author: 'Vel Eum', rating: 5 },
+  { title: 'Illum qui dolorem', body: 'Illum qui dolorem eum fugiat quo voluptas nulla pariatur.', author: 'Illum Quo', rating: 5 }
 ]
 
 function splitArray(array, numParts) {

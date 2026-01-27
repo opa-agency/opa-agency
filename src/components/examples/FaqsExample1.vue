@@ -3,11 +3,11 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 id="faqs-title" class="text-3xl font-medium tracking-tight text-gray-900">
-          Întrebări frecvente
+          Lorem ipsum dolor sit amet
         </h2>
         <p class="mt-2 text-lg text-gray-600">
-          Dacă ai alte întrebări,
-          <a href="mailto:info@example.com" class="text-gray-900 underline">contactează-ne</a>.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <a href="mailto:info@example.com" class="text-gray-900 underline">Lorem ipsum</a>.
         </p>
       </div>
       <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3">
@@ -30,44 +30,44 @@ import Container from '../Container.vue'
 const faqs = [
   [
     {
-      question: 'Cum știu că sfaturile sunt bune?',
-      answer: 'Întreaga noastră afacere depinde de calitatea sfaturilor noastre, deci este în interesul nostru ca acestea să fie excelente. Rezultatele clienților noștri vorbesc de la sine, pur și simplu ai încredere în noi.'
+      question: 'Lorem ipsum dolor sit amet?',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
-      question: 'Nu este aceasta tranzacționare pe bază de informații privilegiate?',
-      answer: 'Da exact. Dar la scară mare! Agenția noastră aduce strategii digitale de la profesioniști din industrie pe care poate nu îi cunoști direct.'
+      question: 'Consectetur adipiscing elit?',
+      answer: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
     {
-      question: 'Dar nu este ilegal tranzacționarea pe bază de informații privilegiate?',
-      answer: 'Iată care este treaba: tu ești cel care face tranzacționarea, nu noi. Noi îți oferim doar sfaturile și câteva instrumente pentru a face tranzacții. Nu facem nimic greșit aici.'
+      question: 'Sed do eiusmod tempor?',
+      answer: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
     }
   ],
   [
     {
-      question: 'Oamenii care vă dau sfaturi realizează ce fac?',
-      answer: 'Din nou, aș argumenta că aceasta nu este cu adevărat responsabilitatea noastră. Oamenii fac propriile alegeri. Dacă nu cercetează consecințele, este treaba lor, nu a noastră.'
+      question: 'Ut enim ad minim veniam?',
+      answer: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
-      question: 'Unde este bazată Online Presence Agency?',
-      answer: 'Să spunem doar că nu este undeva unde SEC ne va găsi.'
+      question: 'Quis nostrud exercitation?',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
-      question: 'Cine poate folosi serviciile Online Presence Agency?',
-      answer: 'Pentru planul nostru gratuit, limita de vârstă se bazează pe vârsta minimă pentru tranzacționare în țara ta de reședință. Planul nostru VIP folosește anonimizare avansată a tranzacțiilor.'
+      question: 'Ullamco laboris nisi?',
+      answer: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     }
   ],
   [
     {
-      question: 'Cum ați reușit să puneți asta pe App Store?',
-      answer: 'Sincer, am fost surprinși și noi, dar în cele din urmă am aflat că recenzentul aplicației a găsit aplicația atât de convingătoare încât a aprobat-o doar ca să o poată folosi ei înșiși.'
+      question: 'Duis aute irure dolor?',
+      answer: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
     },
     {
-      question: 'Ce suport oferă Online Presence Agency?',
-      answer: 'Oferim suport cuprinzător pentru toți clienții noștri, de la dezvoltarea strategiei până la implementare și optimizare continuă.'
+      question: 'Excepteur sint occaecat?',
+      answer: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
-      question: 'Cum devin un insider?',
-      answer: 'Contactează-ne cu câteva detalii despre industria ta și tipul de acces pe care îl ai pentru a solicita un cont de insider.'
+      question: 'Sunt in culpa?',
+      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
   ]
 ]

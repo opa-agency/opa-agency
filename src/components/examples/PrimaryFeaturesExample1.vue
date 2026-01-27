@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
         <h2 class="text-3xl font-medium tracking-tight text-white">
-          Fiecare funcționalitate de care ai nevoie pentru a avea succes. Încearcă singur.
+          Vezi ofertele noastre pentru landing page-uri
         </h2>
         <p class="mt-2 text-lg text-gray-400">
-          Online Presence Agency a fost creat pentru afaceri și antreprenori care vor să iasă în evidență și nu vor permite nimic să le stea în cale pentru succesul lor digital. Dacă alte agenții se tem să construiască, noi avem soluția.
+          Oferim soluții complete de landing page-uri personalizate pentru afacerea ta. De la design modern și responsive, până la integrări avansate - avem pachetul potrivit pentru nevoile tale. Fiecare cerere este unică, iar dacă niciun pachet nu îți satisface nevoile, contactează-ne pentru o ofertă personalizată.
         </p>
       </div>
     </Container>

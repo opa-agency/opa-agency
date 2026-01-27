@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl text-center">
         <h2 id="pricing-title" class="text-3xl font-medium tracking-tight text-gray-900">
-          Investește în ritmul tău.
+          Lorem ipsum dolor sit amet.
         </h2>
         <p class="mt-2 text-lg text-gray-600">
-          Alege un plan care se potrivește stilului tău.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
@@ -58,47 +58,47 @@ import Button from '../Button.vue'
 
 const plans = [
   {
-    name: 'Începător',
+    name: 'Lorem',
     featured: false,
     price: '$0',
-    description: 'Ești nou în investiții dar vrei să o faci corect. Începe gratuit.',
-    button: { label: 'Începe gratuit', href: '#' },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    button: { label: 'Lorem ipsum', href: '#' },
     features: [
-      'Tranzacționare fără comision',
-      'Criptare pe mai multe niveluri',
-      'Un sfat în fiecare zi',
-      'Investește până la $1,500 lunar'
+      'Sed do eiusmod tempor',
+      'Incididunt ut labore',
+      'Dolore magna aliqua',
+      'Ut enim ad minim veniam'
     ],
     logomarkClassName: 'fill-gray-300'
   },
   {
-    name: 'Investitor',
+    name: 'Ipsum',
     featured: false,
     price: '$7',
-    description: 'Investești de ceva timp. Investește mai mult și crește-ți averea mai repede.',
-    button: { label: 'Abonează-te', href: '#' },
+    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    button: { label: 'Dolor sit', href: '#' },
     features: [
-      'Tranzacționare fără comision',
-      'Criptare pe mai multe niveluri',
-      'Un sfat pe oră',
-      'Investește până la $15,000 lunar',
-      'Anonimizare de bază a tranzacțiilor'
+      'Ut enim ad minim veniam',
+      'Quis nostrud exercitation',
+      'Ullamco laboris nisi',
+      'Aliquip ex ea commodo',
+      'Duis aute irure dolor'
     ],
     logomarkClassName: 'fill-gray-500'
   },
   {
-    name: 'VIP',
+    name: 'Dolor',
     featured: true,
     price: '$199',
-    description: 'Ai o cantitate uriașă de active dar nu este suficient. Spre lună.',
-    button: { label: 'Abonează-te', href: '#' },
+    description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+    button: { label: 'Consectetur', href: '#' },
     features: [
-      'Tranzacționare fără comision',
-      'Criptare pe mai multe niveluri',
-      'Notificări de sfaturi în timp real',
-      'Fără limite de investiție',
-      'Anonimizare avansată a tranzacțiilor',
-      'Recoltare automată a pierderilor fiscale'
+      'Mollit anim id est',
+      'Laborum et dolore magna',
+      'Pariatur in voluptate',
+      'Velit esse cillum dolore',
+      'Eu fugiat nulla pariatur',
+      'Sunt in culpa qui officia'
     ],
     logomarkClassName: 'fill-cyan-500'
   }

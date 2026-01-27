@@ -15,13 +15,16 @@
     <Container class="relative">
       <div class="mx-auto max-w-md sm:text-center">
         <h2 class="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-          Primește primele sfaturi astăzi
+          Lorem ipsum dolor sit amet
         </h2>
         <p class="mt-4 text-lg text-gray-300">
-          Durează 30 de secunde să te înregistrezi. Descarcă aplicația și
-          creează un cont astăzi și îți vom trimite un sfat garantat să
-          dubleze prima ta investiție.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+        <div class="mt-10 flex justify-start sm:justify-center">
+          <Button color="cyan" href="#">
+            Lorem ipsum
+          </Button>
+        </div>
       </div>
     </Container>
   </section>
@@ -29,4 +32,5 @@
 
 <script setup>
 import Container from '../Container.vue'
+import Button from '../Button.vue'
 </script>

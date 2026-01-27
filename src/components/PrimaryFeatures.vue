@@ -1,12 +1,12 @@
 <template>
-  <section id="features" aria-label="Features for investing all your money" class="bg-gray-900 py-20 sm:py-32">
+  <section id="features" aria-label="Pachete pentru landing page-uri" class="bg-gray-900 py-20 sm:py-32">
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
         <h2 class="text-3xl font-medium tracking-tight text-white">
-          Fiecare funcționalitate de care ai nevoie pentru a avea succes. Încearcă singur.
+          Vezi ofertele noastre pentru landing page-uri
         </h2>
         <p class="mt-2 text-lg text-gray-400">
-          Online Presence Agency a fost creat pentru afaceri și antreprenori care vor să iasă în evidență și nu vor permite nimic să le stea în cale pentru succesul lor digital. Dacă alte agenții se tem să construiască, noi avem soluția.
+          Oferim soluții complete de landing page-uri personalizate pentru afacerea ta. De la design modern și responsive, până la integrări avansate - avem pachetul potrivit pentru nevoile tale. Fiecare cerere este unică, iar dacă niciun pachet nu îți satisface nevoile, contactează-ne pentru o ofertă personalizată.
         </p>
       </div>
     </Container>
@@ -14,9 +14,9 @@
     <!-- Mobile version -->
     <div class="mt-16 md:hidden">
       <div class="-mb-4 flex snap-x snap-mandatory -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] sm:-space-x-6 [&::-webkit-scrollbar]:hidden">
-        <div v-for="(feature, index) in features" :key="feature.name" class="w-full flex-none snap-center px-4 sm:px-6">
-          <div class="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div v-for="(offer, index) in offers" :key="offer.name" class="w-full flex-none snap-center px-4 sm:px-6">
+          <div class="relative transform rounded-2xl bg-gray-800 px-5 py-6 flex flex-col">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
               <svg viewBox="0 0 558 558" width="558" height="558" fill="none" aria-hidden="true" :class="index % 2 === 1 ? 'rotate-180' : ''">
                 <defs>
                   <linearGradient :id="`mobile-gradient-${index}`" x1="79" y1="16" x2="105" y2="237" gradientUnits="userSpaceOnUse">
@@ -28,19 +28,27 @@
                 <path d="M1 279C1 125.465 125.465 1 279 1" :stroke="`url(#mobile-gradient-${index})`" stroke-linecap="round" />
               </svg>
             </div>
-            <PhoneFrame class="relative mx-auto w-full max-w-[366px]">
-              <component :is="feature.screen" />
-            </PhoneFrame>
-            <div class="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10">
-              <component :is="feature.icon" class="h-8 w-8" />
-              <h3 class="mt-6 text-sm font-semibold text-white sm:text-lg">{{ feature.name }}</h3>
-              <p class="mt-2 text-sm text-gray-400">{{ feature.description }}</p>
+            <div class="relative z-10 min-h-[500px] flex items-center justify-center">
+              <PhoneFrame class="w-full max-w-[366px]">
+                <component :is="offer.screen" />
+              </PhoneFrame>
+            </div>
+            <div class="relative z-20 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10 mt-6">
+              <div class="flex items-center gap-4">
+                <component :is="offer.icon" class="h-8 w-8 flex-shrink-0" />
+                <h3 class="text-sm font-semibold text-white sm:text-lg">{{ offer.name }}</h3>
+              </div>
+              <p class="mt-4 text-sm text-gray-400">{{ offer.description }}</p>
+              <div class="mt-4">
+                <span class="text-2xl font-bold text-white">{{ offer.price }}</span>
+                <span class="text-sm text-gray-400"> / {{ offer.priceUnit }}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="mt-6 flex justify-center gap-3">
-        <button v-for="(_, index) in features" :key="index" type="button" class="relative h-0.5 w-4 rounded-full bg-gray-500">
+        <button v-for="(_, index) in offers" :key="index" type="button" class="relative h-0.5 w-4 rounded-full bg-gray-500">
           <span class="absolute -inset-x-1.5 -inset-y-3" />
         </button>
       </div>
@@ -50,13 +58,19 @@
     <Container class="hidden md:mt-20 md:block">
       <div class="grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24">
         <div class="relative z-10 order-last col-span-6 space-y-6">
-          <div v-for="(feature, index) in features" :key="feature.name" 
+          <div v-for="(offer, index) in offers" :key="offer.name" 
                @click="selectedIndex = index"
                :class="['relative rounded-2xl transition-colors hover:bg-gray-800/30 cursor-pointer', index === selectedIndex ? 'bg-gray-800' : '']">
             <div class="relative z-10 p-8">
-              <component :is="feature.icon" class="h-8 w-8" />
-              <h3 class="mt-6 text-lg font-semibold text-white">{{ feature.name }}</h3>
-              <p class="mt-2 text-sm text-gray-400">{{ feature.description }}</p>
+              <div class="flex items-center gap-4">
+                <component :is="offer.icon" class="h-8 w-8 flex-shrink-0" />
+                <h3 class="text-lg font-semibold text-white">{{ offer.name }}</h3>
+              </div>
+              <p class="mt-4 text-sm text-gray-400">{{ offer.description }}</p>
+              <div class="mt-4">
+                <span class="text-3xl font-bold text-white">{{ offer.price }}</span>
+                <span class="text-sm text-gray-400"> / {{ offer.priceUnit }}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +88,7 @@
             </svg>
           </div>
           <PhoneFrame class="z-10 mx-auto w-full max-w-[366px]">
-            <component :is="features[selectedIndex].screen" />
+            <component :is="offers[selectedIndex].screen" />
           </PhoneFrame>
         </div>
       </div>
@@ -90,136 +104,135 @@ import PhoneFrame from './PhoneFrame.vue'
 const selectedIndex = ref(0)
 
 // Icon components
-const DeviceUserIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true', class: 'text-white' }, [
-  h('circle', { cx: 16, cy: 16, r: 16, fill: '#A3A3A3', 'fill-opacity': 0.2 }),
-  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M16 23a3 3 0 100-6 3 3 0 000 6zm-1 2a4 4 0 00-4 4v1a2 2 0 002 2h6a2 2 0 002-2v-1a4 4 0 00-4-4h-2z', fill: '#737373' }),
-  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M5 4a4 4 0 014-4h14a4 4 0 014 4v24a4.002 4.002 0 01-3.01 3.877c-.535.136-.99-.325-.99-.877s.474-.98.959-1.244A2 2 0 0025 28V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 001.041 1.756C8.525 30.02 9 30.448 9 31s-.455 1.013-.99.877A4.002 4.002 0 015 28V4z', fill: '#A3A3A3' })
-])
-
-const DeviceNotificationIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true', class: 'text-white' }, [
+const PackageBasicIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true', class: 'text-white' }, [
   h('circle', { cx: 16, cy: 16, r: 16, fill: '#A3A3A3', 'fill-opacity': 0.2 }),
   h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#A3A3A3' }),
-  h('path', { d: 'M9 8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H11a2 2 0 01-2-2V8z', fill: '#737373' })
+  h('circle', { cx: 16, cy: 16, r: 5, fill: '#737373' })
 ])
 
-const DeviceTouchIcon = () => h('svg', { viewBox: '0 0 32 32', fill: 'none', 'aria-hidden': 'true', class: 'text-white' }, [
+const PackageStandardIcon = () => h('svg', { viewBox: '0 0 32 32', 'aria-hidden': 'true', class: 'text-white' }, [
   h('circle', { cx: 16, cy: 16, r: 16, fill: '#A3A3A3', 'fill-opacity': 0.2 }),
-  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M5 4a4 4 0 014-4h14a4 4 0 014 4v10h-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 002 2h5v2H9a4 4 0 01-4-4V4z', fill: '#737373' }),
-  h('path', { d: 'M24 18a6 6 0 11-12 0 6 6 0 0112 0z', fill: '#06B6D4' })
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#A3A3A3' }),
+  h('path', { d: 'M9 8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H11a2 2 0 01-2-2V8z', fill: '#737373' }),
+  h('circle', { cx: 16, cy: 20, r: 3, fill: '#06B6D4' })
 ])
 
-// Feature screen components
-const InviteScreen = () => h('div', { class: 'flex flex-col' }, [
-  h('div', { class: 'flex justify-between px-4 pt-4' }, [
-    h('svg', { viewBox: '0 0 24 24', fill: 'none', class: 'h-6 w-6', 'aria-hidden': 'true' }, [
-      h('path', { d: 'M5 6h14M5 18h14M5 12h14', stroke: '#fff', 'stroke-width': '2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' })
-    ])
-  ]),
-  h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Invită Prieteni')
-  ]),
-  h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
-    h('div', { class: 'p-4' }, [
-      h('div', { class: 'space-y-4' }, [
-        ...[1, 2, 3, 4].map(i => 
-          h('div', { key: i, class: 'flex items-center gap-3 rounded-lg bg-gray-50 p-3' }, [
-            h('div', { class: 'h-10 w-10 rounded-full bg-gray-200' }),
-            h('div', { class: 'flex-auto' }, [
-              h('div', { class: 'text-sm font-medium text-gray-900' }, `Prieten ${i}`),
-              h('div', { class: 'text-xs text-gray-500' }, 'prieten@example.com')
-            ]),
-            h('button', { class: 'rounded bg-cyan-500 px-3 py-1 text-xs font-semibold text-white' }, 'Invită')
-          ])
-        ),
-        h('div', { class: 'mt-6 rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Invită persoană')
-      ])
-    ])
-  ])
+const PackagePremiumIcon = () => h('svg', { viewBox: '0 0 32 32', fill: 'none', 'aria-hidden': 'true', class: 'text-white' }, [
+  h('circle', { cx: 16, cy: 16, r: 16, fill: '#A3A3A3', 'fill-opacity': 0.2 }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M5 4a4 4 0 014-4h14a4 4 0 014 4v24a4 4 0 01-4 4H9a4 4 0 01-4-4V4z', fill: '#737373' }),
+  h('path', { 'fill-rule': 'evenodd', 'clip-rule': 'evenodd', d: 'M9 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z', fill: '#A3A3A3' }),
+  h('path', { d: 'M16 10l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6l2-6z', fill: '#06B6D4' })
 ])
 
-const StocksScreen = () => h('div', { class: 'flex flex-col' }, [
-  h('div', { class: 'flex justify-between px-4 pt-4' }, [
-    h('svg', { viewBox: '0 0 24 24', fill: 'none', class: 'h-6 w-6' }, [
-      h('path', { d: 'M5 6h14M5 18h14M5 12h14', stroke: '#fff', 'stroke-width': '2', 'stroke-linecap': 'round' })
-    ])
+// Offer screen components - showing pricing details on phone
+const BasicScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full' }, [
+  h('div', { class: 'flex justify-between px-4 pt-4 bg-gray-800' }, [
   ]),
-  h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Acțiuni'),
-    h('div', { class: 'text-sm text-gray-500' }, 'Martie 9, 2022')
+  h('div', { class: 'px-4 pb-6 pt-2 bg-gray-800 text-white' }, [
+    h('div', { class: 'text-2xl font-bold' }, 'Pachet Basic'),
+    h('div', { class: 'text-sm opacity-70' }, 'Perfect pentru început')
   ]),
-  h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
-    h('div', { class: 'divide-y divide-gray-100' }, [
+  h('div', { class: 'flex-auto bg-gray-900 p-4' }, [
+    h('div', { class: 'space-y-3' }, [
       ...[
-        { name: 'Laravel', price: '4,098.01', change: '+4.98%', positive: true },
-        { name: 'Tuple', price: '5,451.10', change: '-3.38%', positive: false },
-        { name: 'Transistor', price: '4,098.41', change: '+6.25%', positive: true },
-        { name: 'Diageo', price: '250.65', change: '+1.25%', positive: true },
-        { name: 'StaticKit', price: '250.65', change: '-3.38%', positive: false },
-        { name: 'Statamic', price: '5,040.85', change: '-3.11%', positive: false }
-      ].map(stock =>
-        h('div', { key: stock.name, class: 'flex items-center gap-4 px-4 py-3' }, [
-          h('div', { class: 'h-10 w-10 flex-none rounded-full bg-gray-200' }),
-          h('div', { class: 'flex-auto text-sm text-gray-900' }, stock.name),
-          h('div', { class: 'flex-none text-right' }, [
-            h('div', { class: 'text-sm font-medium text-gray-900' }, stock.price),
-            h('div', { class: `text-xs/5 ${stock.positive ? 'text-cyan-500' : 'text-gray-500'}` }, stock.change)
-          ])
+        'Design modern și responsive',
+        '1-3 secțiuni',
+        'Formular de contact',
+        'Optimizare SEO de bază',
+        'Livrare în 3-5 zile'
+      ].map(feature =>
+        h('div', { key: feature, class: 'flex items-start gap-2' }, [
+          h('svg', { class: 'h-5 w-5 text-cyan-400 flex-shrink-0 mt-0.5', viewBox: '0 0 20 20', fill: 'currentColor' }, [
+            h('path', { 'fill-rule': 'evenodd', d: 'M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z', 'clip-rule': 'evenodd' })
+          ]),
+          h('span', { class: 'text-sm text-gray-300' }, feature)
         ])
       )
     ])
   ])
 ])
 
-const InvestScreen = () => h('div', { class: 'flex flex-col' }, [
-  h('div', { class: 'flex justify-between px-4 pt-4' }, [
-    h('svg', { viewBox: '0 0 24 24', fill: 'none', class: 'h-6 w-6' }, [
-      h('path', { d: 'M5 6h14M5 18h14M5 12h14', stroke: '#fff', 'stroke-width': '2', 'stroke-linecap': 'round' })
-    ])
+const StandardScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full' }, [
+  h('div', { class: 'flex justify-between px-4 pt-4 bg-gray-800' }, [
   ]),
-  h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Buy $LA'),
-    h('div', { class: 'text-sm' }, [
-      h('span', { class: 'text-white' }, '$34.28'),
-      ' per share'
-    ])
+  h('div', { class: 'px-4 pb-6 pt-2 bg-gray-800 text-white' }, [
+    h('div', { class: 'text-2xl font-bold' }, 'Pachet Standard'),
+    h('div', { class: 'text-sm opacity-70' }, 'Cel mai popular')
   ]),
-  h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
-    h('div', { class: 'px-4 py-6' }, [
-      h('div', { class: 'space-y-4' }, [
-        ...[
-          { label: 'Număr de acțiuni', value: '100' },
-          { label: 'Preț curent de piață', value: '$34.28' },
-          { label: 'Cost estimat', value: '$3,428.00' }
-        ].map(item =>
-          h('div', { key: item.label, class: 'flex justify-between border-b border-gray-100 pb-4' }, [
-            h('div', { class: 'text-sm text-gray-500' }, item.label),
-            h('div', { class: 'text-sm font-semibold text-gray-900' }, item.value)
-          ])
-        ),
-        h('div', { class: 'rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Cumpără acțiuni')
-      ])
+  h('div', { class: 'flex-auto bg-gray-900 p-4' }, [
+    h('div', { class: 'space-y-3' }, [
+      ...[
+        'Tot din Basic, plus:',
+        '4-6 secțiuni',
+        'Animații interactive',
+        'Integrare Google Analytics',
+        'Chat widget',
+        'Livrare în 5-7 zile'
+      ].map(feature =>
+        h('div', { key: feature, class: 'flex items-start gap-2' }, [
+          h('svg', { class: 'h-5 w-5 text-cyan-400 flex-shrink-0 mt-0.5', viewBox: '0 0 20 20', fill: 'currentColor' }, [
+            h('path', { 'fill-rule': 'evenodd', d: 'M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z', 'clip-rule': 'evenodd' })
+          ]),
+          h('span', { class: 'text-sm text-gray-300' }, feature)
+        ])
+      )
     ])
   ])
 ])
 
-const features = [
+const PremiumScreen = () => h('div', { class: 'flex flex-col bg-gray-900 h-full' }, [
+  h('div', { class: 'flex justify-between px-4 pt-4 bg-gray-800' }, [
+  ]),
+  h('div', { class: 'px-4 pb-6 pt-2 bg-gray-800 text-white' }, [
+    h('div', { class: 'text-2xl font-bold' }, 'Pachet Premium'),
+    h('div', { class: 'text-sm opacity-70' }, 'Pentru rezultate maxime')
+  ]),
+  h('div', { class: 'flex-auto bg-gray-900 p-4' }, [
+    h('div', { class: 'space-y-3' }, [
+      ...[
+        'Tot din Standard, plus:',
+        'Secțiuni nelimitate',
+        'CMS pentru conținut',
+        'A/B testing',
+        'Integrări avansate (CRM)',
+        'Suport prioritar 30 zile',
+        'Livrare în 7-10 zile'
+      ].map(feature =>
+        h('div', { key: feature, class: 'flex items-start gap-2' }, [
+          h('svg', { class: 'h-5 w-5 text-cyan-400 flex-shrink-0 mt-0.5', viewBox: '0 0 20 20', fill: 'currentColor' }, [
+            h('path', { 'fill-rule': 'evenodd', d: 'M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z', 'clip-rule': 'evenodd' })
+          ]),
+          h('span', { class: 'text-sm text-gray-300' }, feature)
+        ])
+      )
+    ])
+  ])
+])
+
+const offers = [
   {
-    name: 'Invită prieteni pentru rezultate mai bune',
-    description: 'Construiește-ți rețeaua cu Online Presence Agency și obține rezultate mai rapide prin conexiunile noastre de experți și abordarea colaborativă.',
-    icon: DeviceUserIcon,
-    screen: InviteScreen
+    name: 'Pachet Basic',
+    description: 'Perfect pentru afaceri mici care își doresc o prezență online profesională. Include design modern, responsive și toate funcționalitățile esențiale.',
+    price: '€299',
+    priceUnit: 'plată unică',
+    icon: PackageBasicIcon,
+    screen: BasicScreen
   },
   {
-    name: 'Notificări pentru oportunități',
-    description: 'Primește o notificare de fiecare dată când descoperim ceva care îți poate îmbunătăți strategia digitală, astfel încât să poți acționa rapid.',
-    icon: DeviceNotificationIcon,
-    screen: StocksScreen
+    name: 'Pachet Standard',
+    description: 'Cel mai popular pachet. Include design avansat, animații interactive și integrări cu instrumente de marketing pentru a crește conversiile.',
+    price: '€499',
+    priceUnit: 'plată unică',
+    icon: PackageStandardIcon,
+    screen: StandardScreen
   },
   {
-    name: 'Investește cât dorești',
-    description: 'Oferim soluții personalizate pentru fiecare buget, astfel încât să poți investi în prezența ta digitală exact cât îți permite afacerea.',
-    icon: DeviceTouchIcon,
-    screen: InvestScreen
+    name: 'Pachet Premium',
+    description: 'Soluția completă pentru afaceri serioase. Include toate funcționalitățile avansate, CMS personalizat și suport dedicat pentru rezultate maxime.',
+    price: '€799',
+    priceUnit: 'plată unică',
+    icon: PackagePremiumIcon,
+    screen: PremiumScreen
   }
 ]
 </script>

@@ -4,16 +4,14 @@
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
           <h1 class="text-4xl font-medium tracking-tight text-gray-900">
-            Construiește-ți Prezența Digitală Perfectă
+            Lorem ipsum dolor sit amet
           </h1>
           <p class="mt-6 text-lg text-gray-600">
-            Prin utilizarea expertizei din rețeaua noastră de profesioniști,
-            vei știi exact când să investești în marketingul tău digital pentru a
-            maximiza rezultatele și să eviți pierderile de timp și bani.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div class="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
-          <div class="absolute top-4 left-1/2 h-[1026px] w-[1026px] -translate-x-1/3 sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
+          <div class="absolute top-4 left-1/2 h-[1026px] w-[1026px] -translate-x-1/3 sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0 hidden lg:block">
             <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true" class="absolute inset-0 h-full w-full animate-spin-slow">
               <path d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z" stroke="#D4D4D4" stroke-opacity="0.7" />
               <path d="M513 1025C230.23 1025 1 795.77 1 513" stroke="url(#hero-gradient-1)" stroke-linecap="round" />
@@ -35,13 +33,10 @@
               </defs>
             </svg>
           </div>
-          <div class="-mx-4 h-[448px] mask-[linear-gradient(to_bottom,white_60%,transparent)] px-9 sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
-            <PhoneFrame class="mx-auto max-w-[366px]">
+          <div class="-mx-4 h-auto px-9 sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 lg:mask-[linear-gradient(to_bottom,white_60%,transparent)] xl:-bottom-32">
+            <PhoneFrame :dark-case="false" class="mx-auto max-w-[366px]">
               <div class="flex flex-col">
                 <div class="flex justify-between px-4 pt-4">
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6 flex-none">
-                    <path d="M5 6h14M5 18h14M5 12h14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
                   <img src="@/images/Logo.png" alt="Logo" class="h-6 flex-none" />
                   <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6 flex-none">
                     <path d="M15 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.696 19h10.608c1.175 0 2.08-.935 1.532-1.897C18.028 15.69 16.187 14 12 14s-6.028 1.689-6.836 3.103C4.616 18.065 5.521 19 6.696 19Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -50,7 +45,7 @@
                 <div class="mt-6 flex-auto rounded-t-2xl bg-white">
                   <div class="p-4">
                     <div class="flex gap-2">
-                      <div class="text-xs/6 text-gray-500">Tailwind Labs, Inc.</div>
+                      <div class="text-xs/6 text-gray-500">Brand Labs, Inc.</div>
                       <div class="text-sm text-gray-900">$CSS</div>
                       <svg viewBox="0 0 24 24" class="ml-auto h-6 w-6" fill="none">
                         <path d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

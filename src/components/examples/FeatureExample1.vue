@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
         <h2 class="text-3xl font-medium tracking-tight text-white">
-          Fiecare funcționalitate de care ai nevoie pentru a avea succes. Încearcă singur.
+          Lorem ipsum dolor sit amet
         </h2>
         <p class="mt-2 text-lg text-gray-400">
-          Online Presence Agency a fost creat pentru afaceri și antreprenori care vor să iasă în evidență și nu vor permite nimic să le stea în cale pentru succesul lor digital. Dacă alte agenții se tem să construiască, noi avem soluția.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
     </Container>
@@ -116,7 +116,7 @@ const InviteScreen = () => h('div', { class: 'flex flex-col' }, [
     ])
   ]),
   h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Invită Prieteni')
+  h('div', { class: 'text-2xl' }, 'Lorem ipsum')
   ]),
   h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
     h('div', { class: 'p-4' }, [
@@ -125,13 +125,13 @@ const InviteScreen = () => h('div', { class: 'flex flex-col' }, [
           h('div', { key: i, class: 'flex items-center gap-3 rounded-lg bg-gray-50 p-3' }, [
             h('div', { class: 'h-10 w-10 rounded-full bg-gray-200' }),
             h('div', { class: 'flex-auto' }, [
-              h('div', { class: 'text-sm font-medium text-gray-900' }, `Prieten ${i}`),
-              h('div', { class: 'text-xs text-gray-500' }, 'prieten@example.com')
+              h('div', { class: 'text-sm font-medium text-gray-900' }, `Lorem ${i}`),
+              h('div', { class: 'text-xs text-gray-500' }, 'lorem@example.com')
             ]),
-            h('button', { class: 'rounded bg-cyan-500 px-3 py-1 text-xs font-semibold text-white' }, 'Invită')
+            h('button', { class: 'rounded bg-cyan-500 px-3 py-1 text-xs font-semibold text-white' }, 'Lorem')
           ])
         ),
-        h('div', { class: 'mt-6 rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Invită persoană')
+        h('div', { class: 'mt-6 rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Lorem ipsum')
       ])
     ])
   ])
@@ -144,18 +144,18 @@ const StocksScreen = () => h('div', { class: 'flex flex-col' }, [
     ])
   ]),
   h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Acțiuni'),
-    h('div', { class: 'text-sm text-gray-500' }, 'Martie 9, 2022')
+    h('div', { class: 'text-2xl' }, 'Lorem ipsum'),
+    h('div', { class: 'text-sm text-gray-500' }, 'Dolor sit amet')
   ]),
   h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
     h('div', { class: 'divide-y divide-gray-100' }, [
       ...[
-        { name: 'Laravel', price: '4,098.01', change: '+4.98%', positive: true },
-        { name: 'Tuple', price: '5,451.10', change: '-3.38%', positive: false },
-        { name: 'Transistor', price: '4,098.41', change: '+6.25%', positive: true },
-        { name: 'Diageo', price: '250.65', change: '+1.25%', positive: true },
-        { name: 'StaticKit', price: '250.65', change: '-3.38%', positive: false },
-        { name: 'Statamic', price: '5,040.85', change: '-3.11%', positive: false }
+        { name: 'Lorem', price: '4,098.01', change: '+4.98%', positive: true },
+        { name: 'Ipsum', price: '5,451.10', change: '-3.38%', positive: false },
+        { name: 'Dolor', price: '4,098.41', change: '+6.25%', positive: true },
+        { name: 'Sit', price: '250.65', change: '+1.25%', positive: true },
+        { name: 'Amet', price: '250.65', change: '-3.38%', positive: false },
+        { name: 'Consectetur', price: '5,040.85', change: '-3.11%', positive: false }
       ].map(stock =>
         h('div', { key: stock.name, class: 'flex items-center gap-4 px-4 py-3' }, [
           h('div', { class: 'h-10 w-10 flex-none rounded-full bg-gray-200' }),
@@ -176,27 +176,27 @@ const InvestScreen = () => h('div', { class: 'flex flex-col' }, [
       h('path', { d: 'M5 6h14M5 18h14M5 12h14', stroke: '#fff', 'stroke-width': '2', 'stroke-linecap': 'round' })
     ])
   ]),
-  h('div', { class: 'mt-6 px-4 text-white' }, [
-    h('div', { class: 'text-2xl' }, 'Buy $LA'),
+    h('div', { class: 'mt-6 px-4 text-white' }, [
+    h('div', { class: 'text-2xl' }, 'Lorem ipsum'),
     h('div', { class: 'text-sm' }, [
       h('span', { class: 'text-white' }, '$34.28'),
-      ' per share'
+      ' lorem ipsum'
     ])
   ]),
   h('div', { class: 'mt-6 flex-auto rounded-t-2xl bg-white' }, [
     h('div', { class: 'px-4 py-6' }, [
       h('div', { class: 'space-y-4' }, [
         ...[
-          { label: 'Număr de acțiuni', value: '100' },
-          { label: 'Preț curent de piață', value: '$34.28' },
-          { label: 'Cost estimat', value: '$3,428.00' }
+          { label: 'Lorem ipsum', value: '100' },
+          { label: 'Dolor sit amet', value: '$34.28' },
+          { label: 'Consectetur adipiscing', value: '$3,428.00' }
         ].map(item =>
           h('div', { key: item.label, class: 'flex justify-between border-b border-gray-100 pb-4' }, [
             h('div', { class: 'text-sm text-gray-500' }, item.label),
             h('div', { class: 'text-sm font-semibold text-gray-900' }, item.value)
           ])
         ),
-        h('div', { class: 'rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Cumpără acțiuni')
+        h('div', { class: 'rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white' }, 'Lorem ipsum')
       ])
     ])
   ])

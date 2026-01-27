@@ -67,6 +67,7 @@
       <!-- Hero Examples Section -->
       <section v-if="activeExample === 'hero'">
         <HeroExample1 />
+        <HeroExample2 />
       </section>
 
       <!-- Features Section -->
@@ -102,6 +103,7 @@
 import { ref } from 'vue'
 import Container from '../components/Container.vue'
 import HeroExample1 from '../components/examples/HeroExample1.vue'
+import HeroExample2 from '../components/examples/HeroExample2.vue'
 import FeatureExample1 from '../components/examples/FeatureExample1.vue'
 import FeatureExample2 from '../components/examples/FeatureExample2.vue'
 import CallToActionExample1 from '../components/examples/CallToActionExample1.vue'

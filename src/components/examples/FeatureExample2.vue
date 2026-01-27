@@ -3,10 +3,10 @@
     <Container>
       <div class="mx-auto max-w-2xl sm:text-center">
         <h2 class="text-3xl font-medium tracking-tight text-gray-900">
-          Acum este momentul să-ți construiești portofoliul.
+          Lorem ipsum dolor sit amet
         </h2>
         <p class="mt-2 text-lg text-gray-600">
-          Cu îndrumarea noastră expertă, niciodată nu este prea târziu să construiești o prezență online puternică și să-ți dezvolți afacerea cu succes.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
       <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
@@ -67,33 +67,33 @@ const DeviceChartIcon = () => h('svg', { viewBox: '0 0 32 32', fill: 'none', 'ar
 
 const features = [
   {
-    name: 'Investește orice sumă',
-    description: 'Fie că este 100 lei sau 100,000 lei, putem pune banii tăi să lucreze pentru tine.',
+    name: 'Lorem ipsum',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     icon: DeviceArrowIcon
   },
   {
-    name: 'Construiește un portofoliu echilibrat',
-    description: 'Investește în industrii diferite pentru a găsi cele mai multe oportunități de a câștiga mare.',
+    name: 'Dolor sit amet',
+    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     icon: DeviceCardsIcon
   },
   {
-    name: 'Tranzacționează în timp real',
-    description: 'Primește sfaturi de la experți despre mișcări importante și acționează asupra lor în câteva secunde.',
+    name: 'Consectetur adipiscing',
+    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
     icon: DeviceClockIcon
   },
   {
-    name: 'Profită de rețeaua ta',
-    description: 'Construiește parteneriate și colaborează cu rețeaua noastră pentru a-ți dezvolta prezența digitală mai rapid.',
+    name: 'Elit sed do',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse.',
     icon: DeviceListIcon
   },
   {
-    name: 'Criptat și anonimizat',
-    description: 'Tehnologia de securitate de ultimă generație te menține protejat și în siguranță.',
+    name: 'Eiusmod tempor',
+    description: 'Cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.',
     icon: DeviceLockIcon
   },
   {
-    name: 'Urmărirea portofoliului',
-    description: 'Urmărește cum investițiile tale cresc exponențial, lăsând alți investitori în urmă.',
+    name: 'Laboris nisi',
+    description: 'Cupidatat non proident, sunt in culpa qui officia deserunt.',
     icon: DeviceChartIcon
   }
 ]
