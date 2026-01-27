@@ -55,19 +55,7 @@
             </PhoneFrame>
           </div>
         </div>
-        <div class="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-          <p class="text-center text-sm font-semibold text-gray-900 lg:text-left">
-            Prezentat în
-          </p>
-          <ul role="list" class="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
-            <li class="flex"><img :src="forbesLogo" alt="Forbes" class="h-8" /></li>
-            <li class="flex"><img :src="techcrunchLogo" alt="TechCrunch" class="h-8" /></li>
-            <li class="flex"><img :src="wiredLogo" alt="Wired" class="h-8" /></li>
-            <li class="flex hidden xl:block"><img :src="cnnLogo" alt="CNN" class="h-8" /></li>
-            <li class="flex"><img :src="bbcLogo" alt="BBC" class="h-8" /></li>
-            <li class="flex"><img :src="cbsLogo" alt="CBS" class="h-8" /></li>
-          </ul>
-        </div>
+        <BrandsScroll />
       </div>
     </Container>
   </section>
@@ -79,11 +67,5 @@ import Button from './Button.vue'
 import AppStoreLink from './AppStoreLink.vue'
 import PhoneFrame from './PhoneFrame.vue'
 import AppDemo from './AppDemo.vue'
-
-import forbesLogo from '@/images/logos/forbes.svg'
-import techcrunchLogo from '@/images/logos/techcrunch.svg'
-import wiredLogo from '@/images/logos/wired.svg'
-import cnnLogo from '@/images/logos/cnn.svg'
-import bbcLogo from '@/images/logos/bbc.svg'
-import cbsLogo from '@/images/logos/cbs.svg'
+import BrandsScroll from './BrandsScroll.vue'
 </script>
