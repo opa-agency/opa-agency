@@ -3,7 +3,10 @@
     v-for="(link, index) in links"
     :key="link.label"
     :to="link.to"
-    class="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
+    :class="[
+      'relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm transition-colors delay-150 hover:text-gray-900 hover:delay-0',
+      isActive(link.to) ? 'text-gray-900 font-semibold' : 'text-gray-700'
+    ]"
     @mouseenter="handleMouseEnter(index)"
     @mouseleave="handleMouseLeave"
   >
@@ -19,7 +22,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 
 const links = [
   { label: 'Acasa', to: '/' },
@@ -29,8 +32,15 @@ const links = [
   { label: 'Intrebari frecvente', to: '/faqs' }
 ]
 
+const route = useRoute()
+
 const hoveredIndex = ref(null)
 let timeoutRef = null
+
+const isActive = (to) => {
+  if (to === '/') return route.path === '/'
+  return route.path.startsWith(to)
+}
 
 function handleMouseEnter(index) {
   if (timeoutRef) {

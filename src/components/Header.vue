@@ -35,19 +35,39 @@
             >
               <PopoverPanel class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20">
                 <div class="space-y-4">
-                  <PopoverButton :as="RouterLink" :to="{ name: 'home' }" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton
+                    :as="RouterLink"
+                    :to="{ name: 'home' }"
+                    :class="['block text-base/7 tracking-tight', isActive('/') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                  >
                     Acasa
                   </PopoverButton>
-                  <PopoverButton :as="RouterLink" to="/features" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton
+                    :as="RouterLink"
+                    to="/features"
+                    :class="['block text-base/7 tracking-tight', isActive('/features') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                  >
                     Functionalitati
                   </PopoverButton>
-                  <PopoverButton :as="RouterLink" to="/reviews" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton
+                    :as="RouterLink"
+                    to="/reviews"
+                    :class="['block text-base/7 tracking-tight', isActive('/reviews') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                  >
                     Recenzii
                   </PopoverButton>
-                  <PopoverButton :as="RouterLink" to="/pricing" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton
+                    :as="RouterLink"
+                    to="/pricing"
+                    :class="['block text-base/7 tracking-tight', isActive('/pricing') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                  >
                     Preturi
                   </PopoverButton>
-                  <PopoverButton :as="RouterLink" to="/faqs" class="block text-base/7 tracking-tight text-gray-700">
+                  <PopoverButton
+                    :as="RouterLink"
+                    to="/faqs"
+                    :class="['block text-base/7 tracking-tight', isActive('/faqs') ? 'text-gray-900 font-semibold' : 'text-gray-700']"
+                  >
                     Intrebari frecvente
                   </PopoverButton>
                 </div>
@@ -69,5 +89,12 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import Container from './Container.vue'
 import Logo from './Logo.vue'
 import NavLinks from './NavLinks.vue'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const isActive = (path) => {
+  if (path === '/') return route.path === '/'
+  return route.path.startsWith(path)
+}
 </script>
