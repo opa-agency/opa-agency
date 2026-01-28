@@ -23,11 +23,11 @@
     </div>
     <!-- Mac content area -->
     <div class="bg-gray-900 px-3 pb-1 relative z-10">
-      <div class="rounded-lg overflow-hidden bg-black h-[700px]">
+      <div class="rounded-lg overflow-hidden bg-white h-[700px]">
         <iframe 
           :src="src"
           title="Portfolio example"
-          class="w-full h-full border-none"
+          class="w-full h-full border-none bg-white"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
