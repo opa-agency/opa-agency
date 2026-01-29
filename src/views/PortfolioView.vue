@@ -340,10 +340,10 @@
             </div>
           </div>
 
-          <!-- Example 4 - Prezentare -->
+          <!-- Example 4 - Prezentare 1 -->
           <div class="mb-16">
             <div class="mb-8 max-w-4xl mx-auto text-center">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">Landing Page Prezentare Companie</h2>
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">Landing Page Prezentare Companie - Variantă 1</h2>
               <p class="text-lg text-gray-700 leading-relaxed">
                 Pagină de prezentare companie cu servicii, echipă, realizări și formular de contact.
               </p>
@@ -374,7 +374,41 @@
             </div>
           </div>
 
-          <!-- Example 5 - Servicii -->
+          <!-- Example 5 - Prezentare 2 -->
+          <div class="mb-16">
+            <div class="mb-8 max-w-4xl mx-auto text-center">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">Landing Page Prezentare Companie - Variantă 2</h2>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Pagină de prezentare companie cu design alternativ, secțiuni pentru produse/servicii și prezentare echipă.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-3 mb-8 justify-center">
+              <button
+                @click="openInNewTab('https://onepage-presentation-2.presentationlab.org/#/')"
+                class="px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition-colors font-medium text-sm"
+              >
+                Live Preview
+              </button>
+            </div>
+            <div class="w-full flex-col items-center mb-12 hidden md:flex">
+              <h3 class="text-lg font-semibold text-gray-700 mb-4">Vizualizare Desktop</h3>
+              <PortfolioFrame 
+                :src="'https://onepage-presentation-2.presentationlab.org/#/'"
+                title="Vizualizare Desktop"
+                view-mode="desktop"
+              />
+            </div>
+            <div class="w-full flex flex-col items-center md:hidden">
+              <h3 class="text-lg font-semibold text-gray-700 mb-4">Vizualizare Mobil</h3>
+              <PortfolioFrame 
+                :src="'https://onepage-presentation-2.presentationlab.org/#/'"
+                title="Prezentare"
+                view-mode="mobile"
+              />
+            </div>
+          </div>
+
+          <!-- Example 6 - Servicii -->
           <div class="mb-16">
             <div class="mb-8 max-w-4xl mx-auto text-center">
               <h2 class="text-3xl font-bold text-gray-900 mb-4">Landing Page Servicii</h2>
