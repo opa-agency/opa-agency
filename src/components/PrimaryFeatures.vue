@@ -122,6 +122,109 @@
       </div>
     </Container>
   </section>
+
+  <section aria-label="Creative AI Foto și Video" class="bg-slate-950 py-20 sm:py-28">
+    <Container>
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          Creative AI Foto & Video pentru Produse și Branduri
+        </h2>
+        <p class="mt-3 text-lg text-cyan-200">
+          Conținut optimizat pentru Social Media (Meta, Instagram, TikTok)
+        </p>
+        <p class="mt-4 text-base text-gray-300">
+          Creăm video-uri și imagini AI pentru promovarea produselor sau a brandului tău, adaptate pentru social media, cu focus pe atenție, conversii și identitate vizuală.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-10 max-w-4xl rounded-2xl border border-white/10 bg-white/5 p-6 text-left sm:p-8">
+        <ul class="space-y-4 text-sm text-gray-300 sm:text-base">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">📌</span>
+            <span>Toate clipurile video au o durată optimă de 15–20 secunde, ideală pentru reclame și postări organice.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">📌</span>
+            <span>Textele (scripturi, hook-uri, copy) sunt stabilite și comunicate înainte de producție, astfel încât structura conținutului să fie perfect aliniată cu obiectivele tale.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">📌</span>
+            <div>
+              <p class="text-gray-300">Poți alege între:</p>
+              <ul class="mt-2 space-y-2 pl-6 text-gray-300 list-disc">
+                <li>Avatar AI creat special pentru brandul tău</li>
+                <li>Clonă AI personală (realizată pe baza unor poze sau video cu o persoană reală – tine sau un reprezentant al brandului)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">📌</span>
+            <span>Imaginile sunt livrate în formate dedicate pentru Instagram, Facebook și TikTok, pregătite pentru postare sau ads.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold text-white">🟢 STARTER – Launch Test</h3>
+          <p class="mt-2 text-sm text-gray-300">Ideal pentru testarea produsului sau a brandului</p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li>✔ 1 video AI (15–20 sec) pentru promovare</li>
+            <li>✔ Avatar AI sau clonă AI (la alegere)</li>
+            <li>✔ 3 imagini AI creative pentru social media</li>
+            <li>✔ Copy scurt pentru video și imagini</li>
+            <li>✔ Textele sunt comunicate înainte de producție</li>
+            <li>✔ 1 rundă de ajustări</li>
+          </ul>
+          <p class="mt-6 text-2xl font-semibold text-white">💰 199 lei</p>
+        </div>
+
+        <div class="rounded-2xl border border-cyan-400/40 bg-cyan-500/10 p-6">
+          <h3 class="text-lg font-semibold text-white">🟡 GROWTH – Primele Campanii</h3>
+          <p class="mt-2 text-sm text-gray-300">Pentru branduri care încep să ruleze reclame constant</p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li>✔ 3 video-uri AI (15–20 sec fiecare)</li>
+            <li>✔ Avatar AI sau clonă AI</li>
+            <li>✔ 9 imagini AI pentru social media</li>
+            <li>✔ 3 imagini informative (beneficii, funcționalități, explicații produs)</li>
+            <li>✔ 3 hook-uri + texte pentru 3 imagini</li>
+            <li>✔ Textele pentru video și poze sunt stabilite înainte de producție</li>
+            <li>✔ Formate optimizate pentru Instagram / Facebook / TikTok</li>
+            <li>✔ 2 runde de revizii</li>
+          </ul>
+          <p class="mt-6 text-2xl font-semibold text-white">💰 450 lei</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold text-white">🔵 SCALE – Brand Boost</h3>
+          <p class="mt-2 text-sm text-gray-300">Pentru branduri care vor impact, consistență și conversii</p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li>✔ 5 video-uri AI (15–20 sec fiecare)</li>
+            <li>✔ Avatar AI sau clonă AI personalizată</li>
+            <li>✔ 15 imagini AI pentru social media</li>
+            <li>✔ 5 imagini informative (educative, comparative, explicative)</li>
+            <li>✔ 10 hook-uri + 10 texte orientate spre CTR</li>
+            <li>✔ Mini strategie de postare pentru imagini</li>
+            <li>✔ Textele pentru video și poze sunt comunicate și aprobate înainte de producție</li>
+            <li>✔ Imagini creative cu produsul, avatarul AI al brandului sau clona ta</li>
+            <li>✔ Formate dedicate Instagram / Facebook / TikTok</li>
+            <li>✔ 3 runde de revizii</li>
+          </ul>
+          <p class="mt-6 text-2xl font-semibold text-white">💰 599 lei</p>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-12 max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-6">
+        <h3 class="text-lg font-semibold text-white">🔧 Ce mai trebuie să știe clienții</h3>
+        <ul class="mt-4 space-y-2 text-sm text-gray-300 sm:text-base">
+          <li>Toate materialele sunt livrate gata de postare</li>
+          <li>Conținutul este creat special pentru atenție, engagement și vânzare</li>
+          <li>Avatarul AI poate fi reutilizat ulterior pentru alte campanii</li>
+          <li>Clona AI necesită materiale foto/video clare cu persoana reală</li>
+        </ul>
+      </div>
+    </Container>
+  </section>
 </template>
 
 <script setup>
