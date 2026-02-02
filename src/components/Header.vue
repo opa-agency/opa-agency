@@ -1,16 +1,16 @@
 <template>
   <header class="sticky top-0 z-50 bg-gray-900 text-gray-100">
     <nav>
-      <Container class="relative z-50 flex justify-between py-6 border-b border-gray-800">
-        <div class="relative z-10 flex items-center gap-16">
+      <Container class="relative z-50 flex justify-between items-center py-6 border-b border-gray-800">
+        <div class="relative z-10">
           <RouterLink :to="{ name: 'home' }" aria-label="Home">
             <Logo class="h-10 w-auto" />
           </RouterLink>
-          <div class="hidden lg:flex lg:gap-10">
-            <NavLinks />
-          </div>
         </div>
-        <div class="flex items-center gap-6">
+        <div class="hidden lg:flex lg:gap-10">
+          <NavLinks />
+        </div>
+        <div class="flex lg:hidden items-center gap-6">
           <Popover class="lg:hidden" v-slot="{ close: closePopover }">
             <PopoverButton
               class="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-100 p-2 hover:bg-white/10 hover:stroke-white active:stroke-white"
