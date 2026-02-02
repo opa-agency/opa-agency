@@ -2,15 +2,15 @@
   <div class="py-16">
     <Container>
       <div class="max-w-5xl mx-auto">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           POLITICA DE RETUR ȘI ANULARE
         </h1>
         
-        <p class="mt-6 text-sm text-gray-600">
+        <p class="mt-6 text-sm text-gray-400">
           Ultima actualizare: {{ lastUpdateDate }}
         </p>
 
-        <div class="mt-8 space-y-8 text-base text-gray-700 leading-relaxed">
+        <div class="mt-8 space-y-8 text-base text-gray-300 leading-relaxed">
           <p>
             Serviciile oferite de [DENUMIRE SRL] sunt servicii digitale personalizate, realizate conform 
             cerințelor clientului.
@@ -27,7 +27,7 @@
           </p>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Anularea comenzii</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Anularea comenzii</h2>
             <p>
               Clientul poate anula comanda doar înainte de achitarea facturii.
             </p>

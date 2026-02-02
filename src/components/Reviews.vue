@@ -1,10 +1,10 @@
 <template>
   <section id="reviews" aria-labelledby="reviews-title" class="py-16 sm:py-20">
     <Container>
-      <h2 id="reviews-title" class="text-3xl font-medium tracking-tight text-gray-900 sm:text-center">
+      <h2 id="reviews-title" class="text-3xl font-medium tracking-tight text-white sm:text-center">
         Toată lumea își dezvoltă afacerea cu Online Presence Agency.
       </h2>
-      <p class="mt-2 text-lg text-gray-600 sm:text-center">
+      <p class="mt-2 text-lg text-gray-300 sm:text-center">
         Mii de persoane și-au dublat valoarea netă în ultimele 30 de zile.
       </p>
       <div ref="containerRef" class="relative -mx-4 mt-16 grid h-196 max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3">
@@ -29,8 +29,8 @@
             :ms-per-pixel="10"
           />
         </template>
-        <div class="pointer-events-none absolute inset-x-0 top-0 h-32 bg-linear-to-b from-gray-50" />
-        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-gray-50" />
+        <div class="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black" />
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black" />
       </div>
     </Container>
   </section>
@@ -205,15 +205,15 @@ const Review = defineComponent({
     const animationDelay = possibleAnimationDelays[Math.floor(Math.random() * possibleAnimationDelays.length)]
 
     return () => h('figure', {
-      class: `animate-fade-in rounded-3xl bg-white p-6 opacity-0 shadow-md shadow-gray-900/5 ${props.className || ''}`,
+      class: `animate-fade-in rounded-3xl bg-gray-800 p-6 opacity-0 shadow-md shadow-black/50 ${props.className || ''}`,
       style: { animationDelay }
     }, [
-      h('blockquote', { class: 'text-gray-900' }, [
+      h('blockquote', { class: 'text-white' }, [
         h(StarRating, { rating: props.rating }),
         h('p', { class: 'mt-4 text-lg/6 font-semibold before:content-[\'"\'] after:content-[\'"\']' }, props.title),
         h('p', { class: 'mt-3 text-base/7' }, props.body)
       ]),
-      h('figcaption', { class: 'mt-3 text-sm text-gray-600 before:content-[\'–_\']' }, props.author)
+      h('figcaption', { class: 'mt-3 text-sm text-gray-400 before:content-[\'–_\']' }, props.author)
     ])
   }
 })

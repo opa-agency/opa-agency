@@ -26,9 +26,11 @@ import { RouterLink, useRoute } from 'vue-router'
 
 const links = [
   { label: 'Acasa', to: '/' },
+  { label: 'Despre Noi', to: '/despre-noi' },
   { label: 'Servicii', to: '/servicii' },
-  { label: 'Portofoliu', to: '/portofoliu' },
-  { label: 'Exemple', to: '/examples' }
+  { label: 'Contact', to: '/contact' }
+  // { label: 'Portofoliu', to: '/portofoliu' },
+  // { label: 'Exemple', to: '/examples' }
 ]
 
 const route = useRoute()

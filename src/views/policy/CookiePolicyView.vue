@@ -2,17 +2,17 @@
   <div class="py-16">
     <Container>
       <div class="max-w-5xl mx-auto">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           POLITICA DE COOKIE-URI
         </h1>
         
-        <p class="mt-6 text-sm text-gray-600">
+        <p class="mt-6 text-sm text-gray-400">
           Ultima actualizare: {{ lastUpdateDate }}
         </p>
 
-        <div class="mt-8 space-y-8 text-base text-gray-700 leading-relaxed">
+        <div class="mt-8 space-y-8 text-base text-gray-300 leading-relaxed">
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Politica noastră privind cookie-urile</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Politica noastră privind cookie-urile</h2>
             <p class="mb-4">
               La Online Presence Agency, confidențialitatea și securitatea datelor dumneavoastră sunt prioritățile noastre absolute.
             </p>
@@ -26,7 +26,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">De ce am ales această abordare?</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">De ce am ales această abordare?</h2>
             <p class="mb-4">
               În era modernă în care trăim, preocupările legate de confidențialitatea datelor au crescut semnificativ. 
               Companiile colectează din ce în ce mai multe informații despre utilizatori, adesea fără cunoștința sau consimțământul acestora.
@@ -41,7 +41,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Ce înseamnă asta pentru dumneavoastră?</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Ce înseamnă asta pentru dumneavoastră?</h2>
             <ul class="ml-6 space-y-2 list-disc">
               <li>Nu vom stoca nicio informație în browser-ul dumneavoastră</li>
               <li>Nu vom urmări comportamentul dumneavoastră pe website</li>
@@ -52,7 +52,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Comunicarea directă</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Comunicarea directă</h2>
             <p>
               Singurele date pe care le colectăm sunt cele pe care alegeți să ni le furnizați direct prin intermediul 
               formularelor de contact sau prin email. Aceste informații sunt folosite exclusiv pentru a vă răspunde 
@@ -61,7 +61,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Angajamentul nostru</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Angajamentul nostru</h2>
             <p>
               Ne angajăm să menținem această politică de confidențialitate și să continuăm să operăm într-un mod 
               transparent și sigur, respectând pe deplin drepturile dumneavoastră la confidențialitate.
@@ -69,7 +69,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contact</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Contact</h2>
             <p>
               Dacă aveți întrebări despre politica noastră de cookie-uri sau despre modul în care gestionăm datele, 
               vă rugăm să ne contactați folosind informațiile disponibile în secțiunea de contact.

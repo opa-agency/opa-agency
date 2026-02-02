@@ -2,21 +2,21 @@
   <div class="py-16">
     <Container>
       <div class="max-w-5xl mx-auto">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           POLITICA DE CONFIDENȚIALITATE
         </h1>
         
-        <p class="mt-6 text-sm text-gray-600">
+        <p class="mt-6 text-sm text-gray-400">
           Ultima actualizare: {{ lastUpdateDate }}
         </p>
 
-        <div class="mt-8 space-y-8 text-base text-gray-700 leading-relaxed">
+        <div class="mt-8 space-y-8 text-base text-gray-300 leading-relaxed">
           <p>
             [DENUMIRE SRL] respectă confidențialitatea datelor dumneavoastră.
           </p>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Ce date colectăm:</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Ce date colectăm:</h2>
             <ul class="ml-6 space-y-2 list-disc">
               <li>Nume și prenume</li>
               <li>Adresă de email</li>
@@ -26,7 +26,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Cum folosim datele:</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Cum folosim datele:</h2>
             <ul class="ml-6 space-y-2 list-disc">
               <li>Pentru comunicarea cu clienții</li>
               <li>Pentru procesarea comenzilor</li>
@@ -35,7 +35,7 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Protecția datelor:</h2>
+            <h2 class="text-2xl font-semibold text-white mb-4">Protecția datelor:</h2>
             <p>
               Datele sunt păstrate în siguranță și nu sunt transmise către terți, cu excepția obligațiilor legale.
             </p>

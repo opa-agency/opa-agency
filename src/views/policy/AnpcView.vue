@@ -3,7 +3,7 @@
     <Container>
       <div class="mx-auto max-w-4xl space-y-10">
         <header class="space-y-3 text-center">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">ANPC</h1>
+          <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">ANPC</h1>
         </header>
 
         <div class="grid gap-8 md:grid-cols-2">
