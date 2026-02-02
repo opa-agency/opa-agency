@@ -13,7 +13,7 @@
     </div>
 
     <Container class="relative z-10 py-16">
-      <div class="max-w-7xl mx-auto bg-black/40 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10">
+      <GlossyContainer>
         <h1 class="text-5xl font-bold text-white mb-6 text-center">Multi Page Website</h1>
         <p class="text-lg text-gray-300 mb-12 text-center">
           Website complet cu multiple pagini pentru afaceri care au nevoie de o prezență online complexă și profesională.
@@ -22,7 +22,7 @@
         <!-- Ce include -->
         <section class="mb-12">
           <h2 class="text-3xl font-bold text-white mb-6 border-b-2 border-purple-400 pb-3">Ce include</h2>
-          <ul class="space-y-3 text-gray-300">
+          <ul class="grid md:grid-cols-2 gap-3 text-gray-300">
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
               <span>Până la 10 pagini personalizate (Acasă, Despre, Servicii, Portofoliu, Blog, Contact, etc.)</span>
@@ -65,7 +65,7 @@
         <!-- Cum functioneaza -->
         <section class="mb-12">
           <h2 class="text-3xl font-bold text-white mb-6 border-b-2 border-purple-400 pb-3">Cum funcționează</h2>
-          <ol class="space-y-4 text-gray-300">
+          <ol class="grid md:grid-cols-2 gap-4 text-gray-300">
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">1.</span>
               <div>
@@ -115,12 +115,13 @@
             Contactează-ne pentru ofertă
           </RouterLink>
         </section>
-      </div>
+      </GlossyContainer>
     </Container>
   </div>
 </template>
 
 <script setup>
 import Container from '@/components/Container.vue'
+import GlossyContainer from '@/components/GlossyContainer.vue'
 import { RouterLink } from 'vue-router'
 </script>

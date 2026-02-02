@@ -42,7 +42,7 @@
         <section id="prezenta-web">
           <h2 class="mb-8 text-3xl font-bold text-white">Solutii Prezenta Web</h2>
           <div class="grid gap-6 md:grid-cols-3">
-            <div class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition flex flex-col">
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
               <RouterLink :to="{ name: 'one-page-website' }" class="cursor-pointer">
                 <h3 class="mb-3 text-lg font-semibold text-white hover:text-purple-400 border-b-2 border-purple-400 pb-2">One Page Website</h3>
               </RouterLink>
@@ -56,7 +56,7 @@
                 </div>
               </div>
             </div>
-            <div class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition flex flex-col">
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
               <RouterLink :to="{ name: 'multi-page-website' }" class="cursor-pointer">
                 <h3 class="mb-3 text-lg font-semibold text-white hover:text-purple-400 border-b-2 border-purple-400 pb-2">Multi Page Website</h3>
               </RouterLink>
@@ -70,7 +70,7 @@
                 </div>
               </div>
             </div>
-            <div class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition flex flex-col">
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
               <RouterLink :to="{ name: 'ecommerce-website' }" class="cursor-pointer">
                 <h3 class="mb-3 text-lg font-semibold text-white hover:text-purple-400 border-b-2 border-purple-400 pb-2">E-commerce Website</h3>
               </RouterLink>
@@ -91,12 +91,15 @@
         <section id="marketing">
           <h2 class="mb-8 text-3xl font-bold text-white">Solutii Marketing</h2>
           <div class="grid gap-6 md:grid-cols-3">
-            <div class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition flex flex-col">
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
               <RouterLink :to="{ name: 'facebook-ads' }" class="cursor-pointer">
-                <h3 class="mb-3 text-lg font-semibold text-white border-b-2 border-purple-400 pb-2 hover:text-purple-400">Reclame Facebook</h3>
+                <div class="flex items-center mb-3 border-b-2 border-purple-400 pb-2">
+                  <img src="@/images/logos/meta-svgrepo-com.svg" alt="Meta" class="w-8 h-8 mr-2" />
+                  <h3 class="text-lg font-semibold text-white hover:text-purple-400">Reclame Facebook & Instagram</h3>
+                </div>
               </RouterLink>
               <p class="mb-4 text-gray-300 block grow">
-                Campanii publicitare pe Facebook pentru a atrage clienti si a creste vanzarile.
+                Campanii publicitare pe Facebook si Instagram pentru a atrage clienti si a creste vanzarile.
               </p>
               <div class="border-t-2 border-purple-400 pt-4 mt-4">
                 <div class="flex justify-between items-center flex-wrap">
