@@ -15,6 +15,8 @@ import OnePageWebsiteView from './views/services/OnePageWebsiteView.vue'
 import MultiPageWebsiteView from './views/services/MultiPageWebsiteView.vue'
 import EcommerceWebsiteView from './views/services/EcommerceWebsiteView.vue'
 import FacebookAdsView from './views/services/FacebookAdsView.vue'
+import OnePageExamplesView from './views/OnePageExamplesView.vue'
+import MultiPageExamplesView from './views/MultiPageExamplesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,7 +25,9 @@ const router = createRouter({
     { path: '/despre-noi', name: 'about', component: AboutView },
     { path: '/servicii', name: 'services', component: ServicesView },
     { path: '/servicii/one-page-website', name: 'one-page-website', component: OnePageWebsiteView },
+    { path: '/servicii/one-page-website/exemple', name: 'one-page-examples', component: OnePageExamplesView },
     { path: '/servicii/multi-page-website', name: 'multi-page-website', component: MultiPageWebsiteView },
+    { path: '/servicii/multi-page-website/exemple', name: 'multi-page-examples', component: MultiPageExamplesView },
     { path: '/servicii/ecommerce-website', name: 'ecommerce-website', component: EcommerceWebsiteView },
     { path: '/servicii/facebook-ads', name: 'facebook-ads', component: FacebookAdsView },
     // { path: '/examples', name: 'examples', component: ExamplesView },

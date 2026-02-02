@@ -56,6 +56,50 @@
                   >
                     Servicii
                   </RouterLink>
+                  
+                  <!-- Portofoliu Dropdown -->
+                  <div class="space-y-2">
+                    <button
+                      @click="toggleMobileDropdown"
+                      :class="['flex items-center justify-between w-full text-base/7 tracking-tight', isDropdownActive() ? 'text-white font-semibold' : 'text-gray-300']"
+                    >
+                      <span>Portofoliu</span>
+                      <svg 
+                        :class="['w-4 h-4 transition-transform', mobileDropdownOpen ? 'rotate-180' : '']"
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <transition
+                      enter-active-class="transition duration-200 ease-out"
+                      enter-from-class="opacity-0 max-h-0"
+                      enter-to-class="opacity-100 max-h-32"
+                      leave-active-class="transition duration-150 ease-in"
+                      leave-from-class="opacity-100 max-h-32"
+                      leave-to-class="opacity-0 max-h-0"
+                    >
+                      <div v-if="mobileDropdownOpen" class="pl-4 space-y-2 overflow-hidden">
+                        <RouterLink
+                          to="/servicii/one-page-website/exemple"
+                          @click="closePopover"
+                          :class="['block text-sm/7 tracking-tight', isActive('/servicii/one-page-website/exemple') ? 'text-white font-semibold' : 'text-gray-400']"
+                        >
+                          One Page Examples
+                        </RouterLink>
+                        <RouterLink
+                          to="/servicii/multi-page-website/exemple"
+                          @click="closePopover"
+                          :class="['block text-sm/7 tracking-tight', isActive('/servicii/multi-page-website/exemple') ? 'text-white font-semibold' : 'text-gray-400']"
+                        >
+                          Multi Page Examples
+                        </RouterLink>
+                      </div>
+                    </transition>
+                  </div>
+                  
                   <RouterLink
                     to="/contact"
                     @click="closePopover"
@@ -78,6 +122,7 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import Container from './Container.vue'
 import Logo from './Logo.vue'
@@ -85,9 +130,18 @@ import NavLinks from './NavLinks.vue'
 import { RouterLink, useRoute } from 'vue-router'
 
 const route = useRoute()
+const mobileDropdownOpen = ref(false)
 
 const isActive = (path) => {
   if (path === '/') return route.path === '/'
   return route.path.startsWith(path)
+}
+
+const isDropdownActive = () => {
+  return route.path.startsWith('/servicii/one-page-website/exemple') || route.path.startsWith('/servicii/multi-page-website/exemple')
+}
+
+const toggleMobileDropdown = () => {
+  mobileDropdownOpen.value = !mobileDropdownOpen.value
 }
 </script>

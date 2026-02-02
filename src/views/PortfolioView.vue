@@ -316,7 +316,7 @@
             </div>
             <div class="flex flex-wrap gap-3 mb-8 justify-center">
               <button
-                @click="openInNewTab('https://onepage-podcast-1.presentationlab.org/#/')"
+                @click="openInNewTab('https://multipage-podcast-1.presentationlab.org/#/')"
                 class="px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition-colors font-medium text-sm"
               >
                 Live Preview
@@ -325,7 +325,7 @@
             <div class="w-full flex-col items-center mb-12 hidden md:flex">
               <h3 class="text-lg font-semibold text-gray-700 mb-4">Vizualizare Desktop</h3>
               <PortfolioFrame 
-                :src="'https://onepage-podcast-1.presentationlab.org/#/'"
+                :src="'https://multipage-podcast-1.presentationlab.org/#/'"
                 title="Vizualizare Desktop"
                 view-mode="desktop"
               />
@@ -333,7 +333,7 @@
             <div class="w-full flex flex-col items-center md:hidden">
               <h3 class="text-lg font-semibold text-gray-700 mb-4">Vizualizare Mobil</h3>
               <PortfolioFrame 
-                :src="'https://onepage-podcast-1.presentationlab.org/#/'"
+                :src="'https://multipage-podcast-1.presentationlab.org/#/'"
                 title="Podcast"
                 view-mode="mobile"
               />

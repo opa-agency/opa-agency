@@ -101,12 +101,20 @@
         <section class="border-t-2 border-purple-400 pt-8 text-center">
           <h2 class="text-3xl font-bold text-white mb-4">Preț: de la 1500 Ron</h2>
           <p class="text-gray-300 mb-6">Livrare în 10-14 zile lucrătoare</p>
-          <RouterLink 
-            :to="{ name: 'contact' }" 
-            class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
-          >
-            Contactează-ne pentru ofertă
-          </RouterLink>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <RouterLink 
+              :to="{ name: 'contact' }" 
+              class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            >
+              Contactează-ne pentru ofertă
+            </RouterLink>
+            <RouterLink 
+              to="/servicii/multi-page-website/exemple" 
+              class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            >
+              Vezi exemple
+            </RouterLink>
+          </div>
         </section>
       </GlossyContainer>
     </Container>
