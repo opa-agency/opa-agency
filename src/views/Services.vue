@@ -12,6 +12,18 @@
       </Container>
     </div>
 
+    <!-- Service Navigation -->
+    <div class="sticky top-[88px] z-40 border-b border-purple-500/30 bg-gray-900/95 backdrop-blur-sm">
+      <Container>
+        <nav class="flex justify-center gap-8 py-4">
+          <button @click="scrollToSection('prezenta-web')" class="text-sm text-gray-300 transition hover:text-white">Prezență Web</button>
+          <button @click="scrollToSection('creare-continut')" class="text-sm text-gray-300 transition hover:text-white">Creare Conținut</button>
+          <button @click="scrollToSection('marketing')" class="text-sm text-gray-300 transition hover:text-white">Marketing</button>
+          <button @click="scrollToSection('gestiune')" class="text-sm text-gray-300 transition hover:text-white">Gestiune</button>
+        </nav>
+      </Container>
+    </div>
+
     <!-- Services Section with pattern background -->
     <div class="relative overflow-hidden bg-gradient-to-bl from-slate-950 via-purple-900 to-cyan-900">
       <!-- Pattern overlay -->
@@ -29,7 +41,7 @@
       <Container class="relative z-10 py-16">
         <div class="space-y-16">
           <!-- Solutii Prezenta Web -->
-        <section>
+        <section id="prezenta-web">
           <h2 class="mb-8 text-3xl font-bold text-white">Solutii Prezenta Web</h2>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="i in 3" :key="`web-${i}`" class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
@@ -42,7 +54,7 @@
         </section>
 
         <!-- Solutii Creere Continut -->
-        <section>
+        <section id="creare-continut">
           <h2 class="mb-8 text-3xl font-bold text-white">Solutii Creere Continut</h2>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="i in 3" :key="`content-${i}`" class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
@@ -55,7 +67,7 @@
         </section>
 
         <!-- Solutii Marketing -->
-        <section>
+        <section id="marketing">
           <h2 class="mb-8 text-3xl font-bold text-white">Solutii Marketing</h2>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="i in 3" :key="`marketing-${i}`" class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
@@ -68,7 +80,7 @@
         </section>
 
         <!-- Solutii Gestiune -->
-        <section>
+        <section id="gestiune">
           <h2 class="mb-8 text-3xl font-bold text-white">Solutii Gestiune</h2>
           <div class="grid gap-6 md:grid-cols-3">
             <div v-for="i in 3" :key="`management-${i}`" class="rounded-lg bg-gray-800/50 p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
@@ -87,4 +99,18 @@
 
 <script setup>
 import Container from '../components/Container.vue'
+
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId)
+  if (element) {
+    const offset = 88 + 56 // Header height + nav height
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+    const offsetPosition = elementPosition - offset
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
 </script>
