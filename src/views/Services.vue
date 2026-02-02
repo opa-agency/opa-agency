@@ -103,7 +103,7 @@
               </p>
               <div class="border-t-2 border-purple-400 pt-4 mt-4">
                 <div class="flex justify-between items-center flex-wrap">
-                  <span class="text-gray-300">Preturi de la 200 Ron / proiect</span>
+                  <span class="text-gray-300">Preturi de la 500 Ron / Luna</span>
                   <RouterLink :to="{ name: 'facebook-ads' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
                 </div>
               </div>
