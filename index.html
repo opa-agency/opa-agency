@@ -9,10 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-Dnffcggf.js"></script>
+    <script type="module" crossorigin src="/assets/index-nfWgMzQr.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DYU53OWN.css">
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      (function () {
+        var l = window.location
+        if (l.search) {
+          var params = new URLSearchParams(l.search)
+          var p = params.get('p')
+          var q = params.get('q')
+          var h = params.get('h')
+
+          if (p !== null) {
+            var newPath = '/' + p.replace(/~and~/g, '&')
+            var newSearch = q ? '?' + q.replace(/~and~/g, '&') : ''
+            var newHash = h ? '#' + h.replace(/~and~/g, '&') : ''
+            window.history.replaceState(null, '', newPath + newSearch + newHash)
+          }
+        }
+      })()
+    </script>
   </body>
 </html>
