@@ -44,31 +44,24 @@
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
-                    to="/features"
-                    :class="['block text-base/7 tracking-tight', isActive('/features') ? 'text-white font-semibold' : 'text-gray-300']"
+                    to="/despre-noi"
+                    :class="['block text-base/7 tracking-tight', isActive('/despre-noi') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
-                    Functionalitati
+                    Despre Noi
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
-                    to="/reviews"
-                    :class="['block text-base/7 tracking-tight', isActive('/reviews') ? 'text-white font-semibold' : 'text-gray-300']"
+                    to="/servicii"
+                    :class="['block text-base/7 tracking-tight', isActive('/servicii') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
-                    Recenzii
+                    Servicii
                   </PopoverButton>
                   <PopoverButton
                     :as="RouterLink"
-                    to="/pricing"
-                    :class="['block text-base/7 tracking-tight', isActive('/pricing') ? 'text-white font-semibold' : 'text-gray-300']"
+                    to="/contact"
+                    :class="['block text-base/7 tracking-tight', isActive('/contact') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
-                    Preturi
-                  </PopoverButton>
-                  <PopoverButton
-                    :as="RouterLink"
-                    to="/faqs"
-                    :class="['block text-base/7 tracking-tight', isActive('/faqs') ? 'text-white font-semibold' : 'text-gray-300']"
-                  >
-                    Intrebari frecvente
+                    Contact
                   </PopoverButton>
                 </div>
                 <div class="mt-8 flex flex-col gap-4">

@@ -25,11 +25,11 @@
           <ul class="grid md:grid-cols-2 gap-3 text-gray-300">
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Platformă e-commerce completă (WooCommerce/Shopify)</span>
+              <span>Platformă e-commerce completă (Shopify)</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Design personalizat și responsive</span>
+              <span>Implementare design customizat</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
@@ -37,39 +37,31 @@
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Sistem de coș de cumpărături</span>
+              <span>Configurare magazin online</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Integrare procesare plăți (Card, PayPal, Transfer bancar)</span>
+              <span>Configurare aplicații Shopify</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Sistem de comenzi și facturare automată</span>
+              <span>Configurare metode de plată si de livrare</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Gestionare stocuri și inventar</span>
+              <span>Configurare opțiuni de livrare multiple</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Opțiuni de livrare multiple</span>
+              <span>Integrare Google și Facebook tags manager</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Conturi clienți și istoric comenzi</span>
+              <span>Configurare Domeniu si Email pentru brand</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Optimizare SEO pentru produse</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Certificat SSL și securitate avansată</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Training complet pentru administrare</span>
+              <span>Training complet pentru administrare in 3 sedinte de 2 ore</span>
             </li>
           </ul>
         </section>
@@ -88,36 +80,29 @@
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">2.</span>
               <div>
-                <strong class="text-white">Alegerea platformei și structură</strong>
-                <p class="mt-1">Selectăm cea mai potrivită platformă și definim categoriile de produse.</p>
+              <strong class="text-white">Design personalizat și implementare</strong>
+              <p class="mt-1">Creăm design customizat și implementăm platforma Shopify cu configurare complete.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">3.</span>
               <div>
-                <strong class="text-white">Design personalizat magazin</strong>
-                <p class="mt-1">Creăm designul pentru homepage, pagini produse, checkout, etc.</p>
+              <strong class="text-white">Adăugare produse și configurare magazin</strong>
+              <p class="mt-1">Adăugăm până la 100 produse cu descrieri, imagini și prețuri, configurăm opțiunile de magazin.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">4.</span>
               <div>
-                <strong class="text-white">Dezvoltare și configurare</strong>
-                <p class="mt-1">Construim magazinul, integrăm plățile, configurăm livrările și adăugăm produsele.</p>
+              <strong class="text-white">Metode de plată, livrare și integrări</strong>
+              <p class="mt-1">Configurăm metode de plată, opțiuni de livrare multiple, Google și Facebook tags manager.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">5.</span>
               <div>
-                <strong class="text-white">Testare comenzi și training</strong>
-                <p class="mt-1">Testăm procesul complet de comandă, te învățăm să gestionezi magazinul.</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="font-bold text-purple-400 mr-4 text-xl">6.</span>
-              <div>
-                <strong class="text-white">Lansare și suport</strong>
-                <p class="mt-1">Lansăm magazinul online și oferim suport pentru primele comenzi.</p>
+              <strong class="text-white">Setup domeniu, email și training</strong>
+              <p class="mt-1">Configurăm domeniu și email pentru brand, apoi oferim training complet în 3 ședințe de 2 ore.</p>
               </div>
             </li>
           </ol>

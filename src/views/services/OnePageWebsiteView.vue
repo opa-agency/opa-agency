@@ -29,27 +29,23 @@
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Secțiuni personalizabile (Hero, Servicii, Despre, Contact)</span>
+              <span>Secțiuni personalizabile (Hero, Servicii, Despre, Contact, ...)</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Formular de contact funcțional</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Optimizare SEO de bază</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Integrare Google Maps</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Viteză de încărcare optimizată</span>
+              <span>Viteză rapidă de încărcare</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
               <span>Certificat SSL (securitate HTTPS)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-400 mr-3">✓</span>
+              <span>Hosting și domeniu pentru primul an inclus</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-400 mr-3">✓</span>
+              <span>Formular de contact și integrări email</span>
             </li>
           </ul>
         </section>
@@ -62,21 +58,21 @@
               <span class="font-bold text-purple-400 mr-4 text-xl">1.</span>
               <div>
                 <strong class="text-white">Consultație inițială</strong>
-                <p class="mt-1">Discutăm despre afacerea ta, obiectivele și viziunea pentru site.</p>
+                <p class="mt-1">Discutăm despre proiect si viziune.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">2.</span>
               <div>
-                <strong class="text-white">Design și aprobare</strong>
-                <p class="mt-1">Creăm mockup-uri și primim feedback-ul tău pentru ajustări.</p>
+                <strong class="text-white">Dezvoltare</strong>
+                <p class="mt-1">Transformam viziunea in design si obtinem aprobarea ta.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">3.</span>
               <div>
-                <strong class="text-white">Dezvoltare</strong>
-                <p class="mt-1">Transformăm designul în site funcțional și optimizat.</p>
+                <strong class="text-white">Domeniu</strong>
+                <p class="mt-1">Înregistrăm domeniul ales pentru tine si il configuram.</p>
               </div>
             </li>
             <li class="flex items-start">

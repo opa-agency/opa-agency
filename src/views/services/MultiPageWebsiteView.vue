@@ -16,7 +16,7 @@
       <GlossyContainer>
         <h1 class="text-5xl font-bold text-white mb-6 text-center">Multi Page Website</h1>
         <p class="text-lg text-gray-300 mb-12 text-center">
-          Website complet cu multiple pagini pentru afaceri care au nevoie de o prezență online complexă și profesională.
+          Soluția perfectă pentru afaceri care au nevoie de o prezență online rapidă și profesională.
         </p>
 
         <!-- Ce include -->
@@ -25,7 +25,19 @@
           <ul class="grid md:grid-cols-2 gap-3 text-gray-300">
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Până la 10 pagini personalizate (Acasă, Despre, Servicii, Portofoliu, Blog, Contact, etc.)</span>
+              <span>Design modern și responsive (optimizat pentru mobil, tabletă și desktop)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-400 mr-3">✓</span>
+              <span>Până la 10 pagini personalizate (Acasă, Despre, Servicii, Portofoliu, Blog, Contact, Politici, etc.)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-400 mr-3">✓</span>
+              <span>Secțiuni personalizabile (Hero, Servicii, Despre, Contact, ...)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-400 mr-3">✓</span>
+              <span>Viteză rapidă de încărcare</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
@@ -37,27 +49,15 @@
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Optimizare SEO avansată pentru toate paginile</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
               <span>Formular de contact și integrări email</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
-              <span>Integrare social media</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Google Analytics și tracking</span>
+              <span>Hosting și domeniu pentru primul an inclus</span>
             </li>
             <li class="flex items-start">
               <span class="text-purple-400 mr-3">✓</span>
               <span>Certificat SSL și securitate</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-purple-400 mr-3">✓</span>
-              <span>Training pentru administrare conținut</span>
             </li>
           </ul>
         </section>
@@ -69,36 +69,29 @@
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">1.</span>
               <div>
-                <strong class="text-white">Consultație detaliată</strong>
-                <p class="mt-1">Analizăm nevoile business-ului, definim structura site-ului și strategia de conținut.</p>
+                <strong class="text-white">Consultație inițială</strong>
+                <p class="mt-1">Discutăm despre proiect si viziune.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">2.</span>
               <div>
-                <strong class="text-white">Planificare și wireframes</strong>
-                <p class="mt-1">Creăm structura și schema pentru fiecare pagină.</p>
+                <strong class="text-white">Dezvoltare</strong>
+                <p class="mt-1">Transformam viziunea in design si obtinem aprobarea ta.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">3.</span>
               <div>
-                <strong class="text-white">Design personalizat</strong>
-                <p class="mt-1">Dezvoltăm designul pentru toate paginile cu feedback continuu.</p>
+                <strong class="text-white">Domeniu</strong>
+                <p class="mt-1">Înregistrăm domeniul ales pentru tine si il configuram.</p>
               </div>
             </li>
             <li class="flex items-start">
               <span class="font-bold text-purple-400 mr-4 text-xl">4.</span>
               <div>
-                <strong class="text-white">Dezvoltare și integrări</strong>
-                <p class="mt-1">Construim site-ul complet cu toate funcționalitățile necesare.</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="font-bold text-purple-400 mr-4 text-xl">5.</span>
-              <div>
-                <strong class="text-white">Testare, training și lansare</strong>
-                <p class="mt-1">Testăm totul, te învățăm să administrezi site-ul și lansăm oficial.</p>
+                <strong class="text-white">Testare și lansare</strong>
+                <p class="mt-1">Verificăm totul și lansăm site-ul live pentru publicul tău.</p>
               </div>
             </li>
           </ol>
