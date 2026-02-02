@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import Container from '../components/Container.vue'
+import Container from '@/components/Container.vue'
 import salImage from '@/images/anpc/sal_1.webp'
 import solImage from '@/images/anpc/sol_1.webp'
 </script>

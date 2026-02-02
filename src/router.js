@@ -1,19 +1,21 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import ContactView from './views/ContactView.vue'
-import CookiePolicyView from './views/CookiePolicyView.vue'
-import DeliveryPolicyView from './views/DeliveryPolicyView.vue'
+import ContactView from './views/policy/ContactView.vue'
+import CookiePolicyView from './views/policy/CookiePolicyView.vue'
+import DeliveryPolicyView from './views/policy/DeliveryPolicyView.vue'
+import PrivacyPolicyView from './views/policy/PrivacyPolicyView.vue'
+import ReturnsPolicyView from './views/policy/ReturnsPolicyView.vue'
+import TermsView from './views/policy/TermsView.vue'
+import AnpcView from './views/policy/AnpcView.vue'
 import ExamplesView from './views/ExamplesView.vue'
 import HomeView from './views/HomeView.vue'
 import PortfolioView from './views/PortfolioView.vue'
-import PrivacyPolicyView from './views/PrivacyPolicyView.vue'
-import ReturnsPolicyView from './views/ReturnsPolicyView.vue'
-import TermsView from './views/TermsView.vue'
-import AnpcView from './views/AnpcView.vue'
+import ServicesView from './views/Services.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'home', component: HomeView },
+    { path: '/servicii', name: 'services', component: ServicesView },
     { path: '/examples', name: 'examples', component: ExamplesView },
     { path: '/portofoliu', name: 'portfolio', component: PortfolioView },
     { path: '/termeni-si-conditii', name: 'terms', component: TermsView },

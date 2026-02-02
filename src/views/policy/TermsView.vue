@@ -93,7 +93,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import Container from '../components/Container.vue'
+import Container from '@/components/Container.vue'
 
 const lastUpdateDate = computed(() => {
   const currentYear = new Date().getFullYear()

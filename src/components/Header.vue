@@ -1,7 +1,7 @@
 <template>
-  <header class="bg-gray-900 text-gray-100">
+  <header class="sticky top-0 z-50 bg-gray-900 text-gray-100">
     <nav>
-      <Container class="relative z-50 flex justify-between py-6">
+      <Container class="relative z-50 flex justify-between py-6 border-b border-gray-800">
         <div class="relative z-10 flex items-center gap-16">
           <RouterLink :to="{ name: 'home' }" aria-label="Home">
             <Logo class="h-10 w-auto" />

@@ -31,5 +31,5 @@
 </template>
 
 <script setup>
-import Container from '../components/Container.vue'
+import Container from '@/components/Container.vue'
 </script>
