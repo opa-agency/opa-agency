@@ -49,7 +49,7 @@
               <p class="mb-4 text-gray-300 block grow">
                 Pagina web de prezentare tip landing page
               </p>
-              <div class="border-t border-gray-700/50 pt-4">
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
                 <div class="flex justify-between items-center flex-wrap">
                   <span class="text-gray-300">Preturi de la 600 Ron / proiect</span>
                   <RouterLink :to="{ name: 'one-page-website' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
@@ -63,7 +63,7 @@
               <p class="mb-4 text-gray-300 block grow">
                 Site web cu mai multe pagini pentru o prezenta online completa.
               </p>
-              <div class="border-t border-gray-700/50 pt-4">
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
                 <div class="flex justify-between items-center flex-wrap">
                   <span class="text-gray-300">Preturi de la 1500 Ron / proiect</span>
                   <RouterLink :to="{ name: 'multi-page-website' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
@@ -77,7 +77,7 @@
               <p class="mb-4 text-gray-300 block grow">
                 Dezvoltare magazin online pentru comert electronic.
               </p>
-              <div class="border-t border-gray-700/50 pt-4">
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
                 <div class="flex justify-between items-center flex-wrap">
                   <span class="text-gray-300">Preturi de la 6500 Ron / proiect</span>
                   <RouterLink :to="{ name: 'ecommerce-website' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
@@ -98,7 +98,7 @@
               <p class="mb-4 text-gray-300 block grow">
                 Campanii publicitare pe Facebook pentru a atrage clienti si a creste vanzarile.
               </p>
-              <div class="border-t border-gray-700/50 pt-4">
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
                 <div class="flex justify-between items-center flex-wrap">
                   <span class="text-gray-300">Preturi de la 200 Ron / proiect</span>
                   <RouterLink :to="{ name: 'facebook-ads' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
