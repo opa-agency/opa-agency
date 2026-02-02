@@ -6,7 +6,7 @@
         <section class="text-center">
           <h1 class="mb-6 text-5xl font-bold text-white">Servicii</h1>
           <p class="mx-auto max-w-2xl text-lg text-gray-300">
-            Soluții complete pentru prezența ta online și creșterea afacerii.
+            Soluții pentru prezența ta online.
           </p>
         </section>
       </Container>
