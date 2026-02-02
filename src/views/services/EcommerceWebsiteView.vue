@@ -16,7 +16,7 @@
       <GlossyContainer>
         <h1 class="text-5xl font-bold text-white mb-6 text-center">E-commerce Website</h1>
         <p class="text-lg text-gray-300 mb-12 text-center">
-          Magazin online complet pentru a-ți vinde produsele sau serviciile online cu sistem de plată integrat.
+          Magazin online complet pentru a-ți vinde produsele sau serviciile online.
         </p>
 
         <!-- Ce include -->
