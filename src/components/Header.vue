@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="flex items-center gap-6">
-          <Popover class="lg:hidden">
+          <Popover class="lg:hidden" v-slot="{ close: closePopover }">
             <PopoverButton
               class="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-100 p-2 hover:bg-white/10 hover:stroke-white active:stroke-white"
               aria-label="Toggle site navigation"
@@ -35,34 +35,34 @@
             >
               <PopoverPanel class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-900 px-6 pt-32 pb-6 shadow-2xl shadow-black/40 ring-1 ring-white/10">
                 <div class="space-y-4">
-                  <PopoverButton
-                    :as="RouterLink"
+                  <RouterLink
                     :to="{ name: 'home' }"
+                    @click="closePopover"
                     :class="['block text-base/7 tracking-tight', isActive('/') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Acasa
-                  </PopoverButton>
-                  <PopoverButton
-                    :as="RouterLink"
+                  </RouterLink>
+                  <RouterLink
                     to="/despre-noi"
+                    @click="closePopover"
                     :class="['block text-base/7 tracking-tight', isActive('/despre-noi') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Despre Noi
-                  </PopoverButton>
-                  <PopoverButton
-                    :as="RouterLink"
+                  </RouterLink>
+                  <RouterLink
                     to="/servicii"
+                    @click="closePopover"
                     :class="['block text-base/7 tracking-tight', isActive('/servicii') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Servicii
-                  </PopoverButton>
-                  <PopoverButton
-                    :as="RouterLink"
+                  </RouterLink>
+                  <RouterLink
                     to="/contact"
+                    @click="closePopover"
                     :class="['block text-base/7 tracking-tight', isActive('/contact') ? 'text-white font-semibold' : 'text-gray-300']"
                   >
                     Contact
-                  </PopoverButton>
+                  </RouterLink>
                 </div>
                 <div class="mt-8 flex flex-col gap-4">
                 </div>
