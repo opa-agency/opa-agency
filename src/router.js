@@ -10,12 +10,20 @@ import ExamplesView from './views/ExamplesView.vue'
 import HomeView from './views/HomeView.vue'
 import PortfolioView from './views/PortfolioView.vue'
 import ServicesView from './views/Services.vue'
+import OnePageWebsiteView from './views/services/OnePageWebsiteView.vue'
+import MultiPageWebsiteView from './views/services/MultiPageWebsiteView.vue'
+import EcommerceWebsiteView from './views/services/EcommerceWebsiteView.vue'
+import FacebookAdsView from './views/services/FacebookAdsView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'home', component: HomeView },
     { path: '/servicii', name: 'services', component: ServicesView },
+    { path: '/servicii/one-page-website', name: 'one-page-website', component: OnePageWebsiteView },
+    { path: '/servicii/multi-page-website', name: 'multi-page-website', component: MultiPageWebsiteView },
+    { path: '/servicii/ecommerce-website', name: 'ecommerce-website', component: EcommerceWebsiteView },
+    { path: '/servicii/facebook-ads', name: 'facebook-ads', component: FacebookAdsView },
     { path: '/examples', name: 'examples', component: ExamplesView },
     { path: '/portofoliu', name: 'portfolio', component: PortfolioView },
     { path: '/termeni-si-conditii', name: 'terms', component: TermsView },
