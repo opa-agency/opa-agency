@@ -26,10 +26,10 @@
 
     <div>
       <label for="phone" class="block text-sm font-medium text-white mb-2">Telefon *</label>
-      <div class="flex items-center gap-2">
-        <div class="flex items-center gap-2 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white">
-          <span class="text-xl">🇷🇴</span>
-          <span class="font-semibold">+4</span>
+      <div class="flex items-center gap-1 sm:gap-2">
+        <div class="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white flex-shrink-0">
+          <span class="text-lg sm:text-xl">🇷🇴</span>
+          <span class="font-semibold text-xs sm:text-base">+4</span>
         </div>
         <input
           type="tel"
@@ -37,7 +37,7 @@
           v-model="phoneNumber"
           @input="handlePhoneInput"
           required
-          class="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+          class="flex-1 min-w-0 px-3 sm:px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base"
           placeholder="0712345678"
         />
       </div>
