@@ -2,16 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/src/images/Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Presence Agency - Build Your Digital Brand</title>
-    <meta name="description" content="Professional digital presence and branding solutions for businesses and entrepreneurs.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Redirecting…</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script>
+      (function () {
+        var l = window.location
+        var isGithubIo = l.hostname.endsWith('github.io')
+        var pathSegmentsToKeep = isGithubIo ? 1 : 0
+        var basePath = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/'
+        var redirectPath = l.pathname.slice(basePath.length)
+        var search = l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : ''
+        var hash = l.hash ? '&h=' + l.hash.slice(1).replace(/&/g, '~and~') : ''
+
+        l.replace(
+          l.protocol + '//' + l.host + basePath +
+          '?p=' + redirectPath.replace(/&/g, '~and~') + search + hash
+        )
+      })()
+    </script>
   </body>
 </html>

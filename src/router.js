@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import ContactView from './views/policy/ContactView.vue'
 import CookiePolicyView from './views/policy/CookiePolicyView.vue'
 import DeliveryPolicyView from './views/policy/DeliveryPolicyView.vue'
@@ -16,7 +16,7 @@ import EcommerceWebsiteView from './views/services/EcommerceWebsiteView.vue'
 import FacebookAdsView from './views/services/FacebookAdsView.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: HomeView },
     { path: '/servicii', name: 'services', component: ServicesView },
