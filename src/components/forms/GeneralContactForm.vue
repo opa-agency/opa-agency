@@ -44,18 +44,6 @@
     </div>
 
     <div>
-      <label for="subject" class="block text-sm font-medium text-white mb-2">Subiect *</label>
-      <input
-        type="text"
-        id="subject"
-        v-model="formData.subject"
-        required
-        class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-        placeholder="Care este subiectul mesajului?"
-      />
-    </div>
-
-    <div>
       <label for="message" class="block text-sm font-medium text-white mb-2">Mesaj *</label>
       <textarea
         id="message"
@@ -69,9 +57,10 @@
 
     <button
       type="submit"
-      class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+      :disabled="isSubmitting"
+      class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      Trimite mesaj
+      {{ isSubmitting ? 'Se trimite...' : 'Trimite mesaj' }}
     </button>
   </form>
 </template>
@@ -83,11 +72,11 @@ const formData = reactive({
   name: '',
   email: '',
   phone: '+4',
-  subject: '',
   message: ''
 })
 
 const phoneNumber = ref('')
+const isSubmitting = ref(false)
 
 const handlePhoneInput = (event) => {
   let value = event.target.value
@@ -97,9 +86,31 @@ const handlePhoneInput = (event) => {
   formData.phone = '+4' + value
 }
 
-const handleSubmit = () => {
-  console.log('General contact submitted:', formData)
-  // Here you would handle form submission (e.g., send to backend)
-  alert('Mesajul tău a fost trimis! Îți vom răspunde în cel mai scurt timp.')
+const handleSubmit = async () => {
+  isSubmitting.value = true
+  try {
+    const templateParams = {
+      to_email: 'agencyonlinepresence@gmail.com',
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.message
+    }
+
+    await window.emailjs.send('service_mre17p6', 'template_hwh3m9e', templateParams)
+    
+    alert('Mesajul tău a fost trimis! Îți vom răspunde în cel mai scurt timp.')
+    // Reset form
+    formData.name = ''
+    formData.email = ''
+    formData.phone = '+4'
+    formData.message = ''
+    phoneNumber.value = ''
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    alert('A apărut o eroare la trimiterea mesajului. Te rugăm încearcă din nou.')
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
