@@ -118,6 +118,74 @@
                 </div>
               </div>
             </div>
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
+              <RouterLink :to="{ name: 'ai-video-creation' }" class="cursor-pointer">
+                <div class="flex items-center mb-3 border-b-2 border-purple-400 pb-2">
+                  <span class="text-3xl mr-2">🎬</span>
+                  <h3 class="text-lg font-semibold text-white hover:text-purple-400">Creare Video cu AI</h3>
+                </div>
+              </RouterLink>
+              <p class="mb-4 text-gray-300 block grow">
+                Clipuri video de maxim 50 secunde, create special pentru promovarea brandului tau.
+              </p>
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
+                <div class="flex justify-between items-center flex-wrap">
+                  <span class="text-gray-300">99 Ron / clip</span>
+                  <RouterLink :to="{ name: 'ai-video-creation' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
+              <RouterLink :to="{ name: 'ai-image-creation' }" class="cursor-pointer">
+                <div class="flex items-center mb-3 border-b-2 border-purple-400 pb-2">
+                  <span class="text-3xl mr-2">📌</span>
+                  <h3 class="text-lg font-semibold text-white hover:text-purple-400">Creare Imagini cu AI</h3>
+                </div>
+              </RouterLink>
+              <p class="mb-4 text-gray-300 block grow">
+                Imagini profesionale pentru promovarea online a brandului tau.
+              </p>
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
+                <div class="flex justify-between items-center flex-wrap">
+                  <span class="text-gray-300">50 Ron / imagine</span>
+                  <RouterLink :to="{ name: 'ai-image-creation' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
+              <RouterLink :to="{ name: 'capcut-video-editing' }" class="cursor-pointer">
+                <div class="flex items-center mb-3 border-b-2 border-purple-400 pb-2">
+                  <span class="text-3xl mr-2">✂️</span>
+                  <h3 class="text-lg font-semibold text-white hover:text-purple-400">Editare Video în CapCut</h3>
+                </div>
+              </RouterLink>
+              <p class="mb-4 text-gray-300 block grow">
+                Pentru clipurile deja filmate de tine (maxim 1 minut).
+              </p>
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
+                <div class="flex justify-between items-center flex-wrap">
+                  <span class="text-gray-300">99 Ron / clip</span>
+                  <RouterLink :to="{ name: 'capcut-video-editing' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black/60 backdrop-blur-md rounded-2xl p-8 shadow-2xl ring-1 ring-white/10 flex flex-col">
+              <RouterLink :to="{ name: 'mini-marketing-strategy' }" class="cursor-pointer">
+                <div class="flex items-center mb-3 border-b-2 border-purple-400 pb-2">
+                  <span class="text-3xl mr-2">📊</span>
+                  <h3 class="text-lg font-semibold text-white hover:text-purple-400">Mini Strategie de Marketing</h3>
+                </div>
+              </RouterLink>
+              <p class="mb-4 text-gray-300 block grow">
+                Plan personalizat pentru postari eficiente si cresterea vanzarilor.
+              </p>
+              <div class="border-t-2 border-purple-400 pt-4 mt-4">
+                <div class="flex justify-between items-center flex-wrap">
+                  <span class="text-gray-300">199 Ron / strategie</span>
+                  <RouterLink :to="{ name: 'mini-marketing-strategy' }" class="text-purple-400 hover:text-purple-300 text-sm font-medium">mai multe detalii →</RouterLink>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

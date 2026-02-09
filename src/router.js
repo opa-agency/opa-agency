@@ -15,6 +15,10 @@ import OnePageWebsiteView from './views/services/OnePageWebsiteView.vue'
 import MultiPageWebsiteView from './views/services/MultiPageWebsiteView.vue'
 import EcommerceWebsiteView from './views/services/EcommerceWebsiteView.vue'
 import FacebookAdsView from './views/services/FacebookAdsView.vue'
+import AIVideoCreationView from './views/services/AIVideoCreationView.vue'
+import AIImageCreationView from './views/services/AIImageCreationView.vue'
+import CapCutVideoEditingView from './views/services/CapCutVideoEditingView.vue'
+import MiniMarketingStrategyView from './views/services/MiniMarketingStrategyView.vue'
 import OnePageExamplesView from './views/OnePageExamplesView.vue'
 import MultiPageExamplesView from './views/MultiPageExamplesView.vue'
 
@@ -30,6 +34,10 @@ const router = createRouter({
     { path: '/servicii/multi-page-website/exemple', name: 'multi-page-examples', component: MultiPageExamplesView },
     { path: '/servicii/ecommerce-website', name: 'ecommerce-website', component: EcommerceWebsiteView },
     { path: '/servicii/facebook-ads', name: 'facebook-ads', component: FacebookAdsView },
+    { path: '/servicii/creare-video-ai', name: 'ai-video-creation', component: AIVideoCreationView },
+    { path: '/servicii/creare-imagini-ai', name: 'ai-image-creation', component: AIImageCreationView },
+    { path: '/servicii/editare-video-capcut', name: 'capcut-video-editing', component: CapCutVideoEditingView },
+    { path: '/servicii/mini-strategie-marketing', name: 'mini-marketing-strategy', component: MiniMarketingStrategyView },
     // { path: '/examples', name: 'examples', component: ExamplesView },
     // { path: '/portofoliu', name: 'portfolio', component: PortfolioView },
     { path: '/termeni-si-conditii', name: 'terms', component: TermsView },
